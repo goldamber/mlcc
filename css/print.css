@@ -1,0 +1,46 @@
+/*
+    The Final Project (Marine Life Care Centre).
+
+    print.css
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    General style rules for print view.
+    Applied to all pages.
+*/
+
+@page {
+    size: 8.3in 11.7in portrait;
+    margin: 0.5in;
+}
+
+.printHidden {
+    display: none;
+}
+
+/* Setting the page breaks in the document */
+.printSection {
+    page-break-after: always;
+    page-break-inside: avoid;
+    color: #162c3c;
+    line-height: 0.46in;
+    font-size: 0.36in;
+}
+
+.elContent,
+.descIntro {
+    page-break-after: avoid;
+}
+
+i.fas {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-style: italic;
+}

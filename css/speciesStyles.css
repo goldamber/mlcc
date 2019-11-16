@@ -1,0 +1,330 @@
+/*
+    The Final Project (Marine Life Care Centre).
+
+    speciesStyles.css
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    Style rules for 'Shelter' and 'Guide' pages.
+*/
+
+
+/* Print styles */
+@media print {
+
+    /* List items */
+    .animalGroup {
+        overflow: hidden;
+    }
+
+    .animalGroup > p {
+        text-align: justify;
+    }
+
+    .animalGroup > p:first-of-type {
+        font-weight: bold;
+    }
+
+    .animalGroup > img {
+        float: right;
+        width: 30%;
+        height: 30%;
+        -webkit-clip-path: circle(40% at center);
+        clip-path: circle(40% at center);
+    }
+
+    /* Details */
+    .animalDetails {
+        display: block;
+    }
+}
+
+/* Web styles */
+@media only screen and (min-width: 772px) {
+    .animalGroup > span {
+        opacity: 0.55;
+        -webkit-transition: opacity 0.45s;
+        -o-transition: opacity 0.45s;
+        transition: opacity 0.45s;
+    }
+
+    .animalGroup > span:hover {
+        opacity: 1;
+    }
+
+    article > a {
+        min-width: 250px;
+    }
+
+    article > a:first-of-type {
+        float: left;
+    }
+
+    article > a:last-of-type {
+        float: right;
+    }
+
+    /* Slider styles */
+    .slideBlock {
+        margin: 1em 10em;
+    }
+}
+
+/* Mobile styles */
+@media only screen {
+
+    /* List styles */
+    .animalBlock {
+        padding: 1.5em;
+        color: #162c3c;
+    }
+
+    .animalBlock h4 {
+        letter-spacing: 1em;
+        background-color: #162c3c;
+        color: #dcebfa;
+        margin: 0;
+        font-variant: small-caps;
+        padding: 1em;
+    }
+
+    .animalList > ul {
+        list-style-type: none;
+        padding: 0;
+        background-color: #7ab0dc;
+    }
+
+    .animalList > ul li {
+        padding: 1em;
+    }
+
+    /* Article styles */
+    article {
+        background-color: #dcebfa;
+        overflow: hidden;
+        color: #162c3c;
+        padding: 1.5em;
+        text-align: center;
+    }
+
+    article > h3,
+    article > p {
+        text-align: center;
+        margin: 0.2em;
+    }
+
+    article > a {
+        display: block;
+        margin: 0.5em;
+        padding: 1em;
+        border: 3px solid #162c3c;
+        color: #162c3c;
+        background-color: #7ab0dc;
+        text-decoration: none;
+        -webkit-transition: all 0.45s;
+        -o-transition: all 0.45s;
+        transition: all 0.45s;
+        -webkit-border-radius: 1em;
+        border-radius: 1em;
+        font-weight: bold;
+    }
+
+    article > a:hover {
+        background-color: #dcebfa;
+    }
+
+    /* Table styles */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 2px solid #0a1419;
+        text-align: left;
+        padding: 0.5em 1em;
+        -webkit-transition: all 0.45s;
+        -o-transition: all 0.45s;
+        transition: all 0.45s;
+    }
+
+    td {
+        background-color: #dcebfa;
+        color: #0a1419;
+    }
+
+    th {
+        border-width: 4px;
+    }
+
+    tr > td:nth-child(2) {
+        font-style: italic;
+    }
+
+    tr {
+        background-color: #3c6e96;
+        color: #dcebfa;
+    }
+
+    /* Group items */
+    .animalGroup {
+        background-color: #dcebfa;
+        overflow: hidden;
+        position: relative;
+        -webkit-border-radius: 1.5em 1.5em 0 0;
+        border-radius: 1.5em 1.5em 0 0;
+    }
+
+    .animalGroup > p {
+        margin: 1em;
+        text-align: justify;
+    }
+
+    .animalGroup > p:first-of-type {
+        font-weight: bold;
+        font-size: 1.7em;
+        margin: 1em;
+    }
+
+    .animalGroup > img {
+        float: right;
+        margin: 0.5em;
+        width: 30%;
+        height: 30%;
+        -webkit-clip-path: circle(30% at center);
+        clip-path: circle(30% at center);
+        outline: 10px solid black;
+    }
+
+    .animalGroup > span {
+        display: block;
+        clear: right;
+        text-align: center;
+        color: #162c3c;
+        padding: 0.2em;
+        font-variant: small-caps;
+    }
+
+    .animalGroup > span > i.fas {
+        display: block;
+    }
+
+    /* Details styles */
+    .animalDetails {
+        margin: 0;
+        padding: 0.5em;
+        background-color: #dcebfa;
+        display: none;
+    }
+
+    .animalDetails p {
+        padding: 0.5em;
+    }
+
+    .animalDetails > .adoptionDetails > .pHead {
+        font-weight: bold;
+        font-size: 0.7em;
+    }
+
+    .animalDetails ul {
+        list-style-type: circle;
+    }
+
+    .animalDetails span,
+    .pHead {
+        font-weight: bold;
+    }
+
+    /* Slider styles */
+    .slideBlock {
+        position: relative;
+        margin: 1em 2em;
+        overflow: hidden;
+    }
+
+    .slide {
+        display: none;
+    }
+
+    .slide > img {
+        width: 100%;
+    }
+
+    .slide .arrowsBlock {
+        text-align: center;
+    }
+
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: #dcebfa;
+        font-weight: bold;
+        font-size: 18px;
+        -webkit-transition: all 0.6s;
+        -o-transition: all 0.6s;
+        transition: all 0.6s;
+        background-color: rgba(10, 20, 25, 0.2);
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(10, 20, 25, 0.6);
+    }
+
+    /* Fading animation */
+    .slide {
+        -webkit-animation-name: fade;
+        animation-name: fade;
+        -webkit-animation-duration: 1.2s;
+        animation-duration: 1.2s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: 0.2
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0.2
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* Audio styles */
+    .audioSample audio {
+        width: 95%;
+        height: 40px;
+        margin: 0.5em;
+    }
+
+    /* Video styles */
+    article.printHidden {
+        background-color: #7ab0dc;
+    }
+
+    object {
+        text-align: center;
+        width: 60%;
+        margin: 2em;
+        -webkit-border-radius: 1.5em;
+        border-radius: 1.5em;
+    }
+}

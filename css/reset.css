@@ -1,0 +1,91 @@
+/*
+    The Final Project (Marine Life Care Centre).
+
+    reset.css
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    Reset style sheet.
+    Sets the default properties for all pages.
+*/
+
+/*Lato font*/
+@font-face {
+    font-family: lato;
+    src: url(../fonts/LatoRegular.ttf);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(../fonts/LatoBold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: lato;
+    src: url(../fonts/LatoItalic.ttf);
+    font-style: italic;
+}
+
+/* Quote styles */
+q,
+blockquote {
+    font-style: italic;
+}
+
+q::after,
+q::before {
+    content: '"';
+}
+
+div,
+span,
+p,
+aside,
+section,
+hgroup {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+* {
+    font-family: lato;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 100%;
+}
+
+a {
+    outline: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: 0;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+img {
+    border: 0;
+}
+
+ul {
+    margin: 0;
+}

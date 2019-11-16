@@ -1,0 +1,92 @@
+/*
+    The Final Project (Marine Life Care Centre).
+
+    news.css
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    Style rules for the news feed.
+*/
+
+/* Print styles */
+@media print {
+    .newsDiv {
+        overflow: hidden;
+    }
+
+    .newsDiv > p {
+        text-align: justify;
+    }
+
+    .newsDiv > p:first-of-type::first-line {
+        font-weight: bold;
+    }
+
+    .newsDiv > p:first-of-type + p::first-line::after {
+        content: '!';
+    }
+
+    .newsDiv > img {
+        float: right;
+        width: 40%;
+        margin: 1in;
+        outline: 3px dotted #162c3c;
+    }
+}
+
+/* Web styles */
+@media only screen {
+    .elContent {
+        background-color: #3c6e96;
+    }
+
+    /* Groups */
+    .newsDiv {
+        margin: 1.5em;
+        background-color: #7ab0dc;
+        color: #162c3c;
+        overflow: hidden;
+    }
+
+    .newsDiv > p {
+        margin: 1.5em;
+        text-align: justify;
+    }
+
+    .newsDiv > p:first-of-type::first-line {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin: 1.2em;
+    }
+
+    .newsDiv > p:first-of-type + p::first-line {
+        word-spacing: 0.7em;
+        line-height: 1.7em;
+    }
+
+    .newsDiv > p:first-of-type + p::after {
+        content: " >>";
+    }
+
+    .newsDiv > p:first-of-type + p::before {
+        content: "> ";
+    }
+
+    .newsDiv > img {
+        float: right;
+        width: 40%;
+        margin: 2em;
+        outline: 3px dotted #162c3c;
+    }
+
+    .infoGroup > a {
+        color: #dcebfa;
+        -webkit-transition: all 0.45s;
+        -o-transition: all 0.45s;
+        transition: all 0.45s;
+    }
+
+    .infoGroup > a:hover {
+        color: #0a1419;
+    }
+}

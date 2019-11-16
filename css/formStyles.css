@@ -1,0 +1,269 @@
+/*
+    The Final Project (Marine Life Care Centre).
+
+    formStyles.css
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    General style rules for form pages.
+*/
+
+h3 {
+    padding: 0.5em;
+    background-color: #162c3c;
+    color: #dcebfa;
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 0.5em;
+}
+
+/* Form styles */
+form {
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+sup {
+    font-weight: bold;
+    color: crimson;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin: 0.1em;
+    color: #3c6e96;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+    display: block;
+    width: 85%;
+    font-size: 1em;
+    padding: 0.53em;
+    margin: 1em 0;
+    border: 3px solid #162c3c;
+    -webkit-border-radius: 0 1em 1em 0;
+    border-radius: 0 1em 1em 0;
+}
+
+input[readonly] {
+    width: 3em;
+    float: right;
+    margin: 0.1em;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 70%;
+    height: 0.01em;
+    float: left;
+    -webkit-border-radius: 0.1em;
+    border-radius: 0.1em;
+    background: #7ab0dc;
+    opacity: 0.6;
+    -webkit-transition: opacity 0.35s;
+    -o-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+input[type="range"]:hover {
+    opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1.2em;
+    height: 1.5em;
+    outline: 3px solid #162c3c;
+    background: #dcebfa;
+}
+
+input[type="range"] + span,
+#prevSpan {
+    margin-top: 1em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    float: left;
+}
+
+textarea {
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    resize: none;
+    padding: 1.5em;
+}
+
+select > optgroup {
+    font-size: 0.7em;
+    background-color: #7ab0dc;
+}
+
+select > optgroup > option {
+    background-color: #dcebfa;
+}
+
+select > option {
+    font-size: 0.7em;
+}
+
+.iconBlock > i.fas {
+    float: left;
+    font-size: 1.2em;
+    padding: 0.6em;
+    color: #dcebfa;
+    background-color: #162c3c;
+    -webkit-border-radius: 0.1em 0 0 0.1em;
+    border-radius: 0.5em 0 0 0.4em;
+}
+
+/* Radio buttons and Checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    width: 5%;
+    display: inline-block;
+    text-align: right;
+    margin: 0.5em;
+    padding: 0.1em;
+}
+
+.formQuestion {
+    margin: 0.4em;
+}
+
+/* Fielsets */
+fieldset {
+    margin: 1em;
+    -webkit-box-shadow: 2px 2px 5px rgba(22, 44, 60, 0.4);
+    box-shadow: 2px 2px 5px rgba(22, 44, 60, 0.4);
+    border: 5px dashed #162c3c;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+    color: #162c3c;
+}
+
+/* Buttons */
+button {
+    font-size: 1.3em;
+    color: #162c3c;
+    background-color: #7ab0dc;
+    padding: 0.5em 2em;
+    border: 3px solid #162c3c;
+    font-weight: bold;
+    -webkit-border-radius: 0.3em;
+    border-radius: 0.3em;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+button[type="submit"]:hover {
+    background-color: #dcebfa;
+    -webkit-border-radius: 0.5em;
+    border-radius: 1em;
+}
+
+button:disabled {
+    cursor: no-drop;
+    opacity: 0.4;
+    margin-right: 10em;
+}
+
+/* Tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-left: 2em;
+}
+
+.tooltip > .tooltipContent {
+    visibility: hidden;
+    background-color: #162c3c;
+    color: #dcebfa;
+    width: 120px;
+    margin-left: -60px;
+    text-align: center;
+    -webkit-border-radius: 0.2em;
+    border-radius: 0.2em;
+    padding: 0.2em 0.1em;
+    position: absolute;
+    font-size: 0.7em;
+    padding: 0.7em;
+    bottom: 110%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transition: opacity 0.37s;
+    -o-transition: opacity 0.37s;
+    transition: opacity 0.37s;
+}
+
+.tooltip:hover .tooltipContent {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Validation styles */
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: #dcebfa;
+}
+
+input:focus:valid {
+    background-color: #6ae678;
+    border-color: #25542a;
+    color: #25542a;
+}
+
+input:focus:invalid {
+    background-color: #e35d7c;
+    border-color: #940728;
+    color: #940728;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 772px) {
+    i.fas {
+        display: none;
+    }
+
+    input,
+    select,
+    textarea {
+        -webkit-border-radius: 1em;
+        border-radius: 1em;
+    }
+}
+
+/* Print styles */
+@media print {
+    hr {
+        display: none;
+    }
+
+    .formQuestion {
+        page-break-inside: avoid;
+    }
+
+    input,
+    select,
+    textarea {
+        -webkit-border-radius: 1em;
+        border-radius: 1em;
+    }
+}

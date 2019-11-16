@@ -1,0 +1,86 @@
+/*
+    The Final Project (Marine Life Care Centre).
+
+    mobile.css
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    General style rules for mobile view.
+    Applied to all pages.
+*/
+
+.mobHidden {
+    display: none;
+}
+
+/* Nav styles */
+#navList > nav {
+    width: 100%;
+    background-color: rgb(10, 20, 25);
+    overflow: hidden
+}
+
+#navList > nav img {
+    height: 5em;
+    margin: 0.5em;
+}
+
+.navCurrent {
+    font-weight: bold;
+}
+
+#barsBlock {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#barsBlock i {
+    font-size: 3em;
+}
+
+#navList > nav #navDropDown {
+    display: none;
+    background-color: #162c3c;
+}
+
+#navList > nav #navDropDown a,
+#navList > nav a:last-of-type {
+    display: block;
+    text-decoration: none;
+    color: #dcebfa;
+    padding: 1em 1.7em;
+    font-size: 1.2em;
+}
+
+#navList > nav #navDropDown a:focus {
+    background-color: #3c6e96;
+}
+
+
+/* Footer styles */
+#mainFooter {
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 1% 0;
+    background-color: #0a1419;
+    color: hsla(210, 75%, 92%, 1);
+}
+
+#mainFooter p.credits {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-style: oblique;
+    font-size: 15px;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+}
+
+#mainFooter center {
+    text-align: left;
+    padding: 0.3em;
+}

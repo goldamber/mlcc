@@ -1,0 +1,150 @@
+/*
+    The Final Project (Marine Life Care Centre).
+
+    mobileHomeStyles.css
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    Style rules for the Home page in mobile view.
+*/
+
+/* Article styles */
+.elContent {
+    background-color: #dcebfa;
+    overflow: hidden;
+}
+
+.elContent > article:first-of-type h3 {
+    text-align: center;
+    margin: 0;
+    padding: 0.3em 0.1em 0.05em 0.1em;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(22, 44, 60);
+}
+
+.elContent > article:first-of-type p.dHidden {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+    line-height: 1.4em;
+}
+
+/* Card styles */
+div.cardContainer {
+    padding-bottom: 1em;
+}
+
+div.cardH {
+    margin: 1.5em 5em;
+    padding: 1em;
+    background-color: #3c6e96;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    -webkit-box-shadow: 1px 2px 5px #162c3c;
+    box-shadow: 1px 2px 7px #162c3c;
+}
+
+div.cardH img {
+    width: 60%;
+    height: 60%;
+    -webkit-clip-path: circle(37% at center);
+    clip-path: circle(37% at center);
+}
+
+div.cardH p {
+    font-size: 22px;
+    padding: 1em 0.1em;
+}
+
+div.cardH a button {
+    text-decoration: none;
+    font-weight: bold;
+    color: #162c3c;
+    font-size: 17px;
+    background-color: #3c6e96;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    border: 3px solid #162c3c;
+    padding: 0.4em 1em;
+    margin: 0.5em;
+}
+
+div.cardH a:focus button {
+    background-color: #dcebfa;
+}
+
+/* Chart section */
+.chartContainer {
+    color: #162c3c;
+    background-color: #7ab0dc;
+}
+
+.articleHeading {
+    margin: 0;
+    padding: 0.5em 0.12em 0.07em 0.3em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.chartContainer > p {
+    line-height: 1.5;
+    padding-left: 1em;
+    text-align: center;
+}
+
+.chartContainer > p::first-line {
+    font-weight: bold;
+    line-height: 2;
+}
+
+.chartContainer > .actionCall {
+    padding-bottom: 15px;
+}
+
+.chartContainer > .actionCall a button {
+    text-decoration: none;
+    font-weight: bold;
+    color: #162c3c;
+    font-size: 17px;
+    background-color: #3c6e96;
+    border: 3px solid #162c3c;
+    padding: 0.4em 1em;
+    margin-top: 0.7em;
+}
+
+.chartContainer > .actionCall a:focus button {
+    background-color: #dcebfa;
+}
+
+/* Article styles (our partners) */
+.articleContainer {
+    color: #dcebfa;
+    background-color: #162c3c;
+    text-align: center;
+}
+
+.articleContainer dl {
+    margin-bottom: 0;
+    padding: 1em;
+}
+
+.articleContainer dd {
+    margin-bottom: 2em;
+}
+
+.articleContainer dl a {
+    line-height: 0.25em;
+    font-style: italic;
+    color: inherit;
+}
+
+.articleContainer dl a:focus {
+    color: #7ab0dc;
+}
+
+.articleContainer dl a:visited {
+    color: #3c6e96;
+    font-style: normal;
+    text-decoration: none;
+}

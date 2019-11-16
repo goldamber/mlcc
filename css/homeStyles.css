@@ -1,0 +1,194 @@
+/*
+    The Final Project (Marine Life Care Centre).
+
+    homeStyles.css
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    Style rules for the Home page.
+*/
+
+/* Fonts */
+@font-face {
+    font-family: concert;
+    src: url(../fonts/ConcertOne.ttf);
+}
+
+/* Drop cap */
+h1::first-letter {
+    font-size: 1.5em;
+}
+
+/* Article styles */
+.elContent {
+    background-color: #dcebfa;
+    overflow: hidden;
+}
+
+.elContent > article:first-of-type h3 {
+    font-family: concert;
+    text-align: center;
+    margin: 0;
+    padding: 0.3em 0.1em 0.05em 0.1em;
+    font-size: 2.7em;
+    font-weight: bold;
+    color: rgb(22, 44, 60);
+}
+
+.elContent > article:first-of-type pre {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+    line-height: 1.4em;
+}
+
+/* Cards */
+div.cardContainer {
+    overflow: hidden;
+    position: relative;
+    left: 17%;
+    padding-bottom: 2em;
+}
+
+div.cardH {
+    float: left;
+    margin: 0.5em 2em;
+    max-width: 12%;
+    padding: 2em;
+    min-height: 230px;
+    max-height: 320px;
+    background-color: #3c6e96;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    -webkit-box-shadow: 1px 2px 5px #162c3c;
+    box-shadow: 1px 2px 7px #162c3c;
+    -webkit-transition: -webkit-transform 0.56s;
+    transition: -webkit-transform 0.56s;
+    -o-transition: transform 0.56s;
+    transition: transform 0.56s;
+    transition: transform 0.56s, -webkit-transform 0.56s;
+}
+
+div.cardH:hover {
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+div.cardH img {
+    width: 90%;
+    height: 90%;
+    -webkit-clip-path: circle(37% at center);
+    clip-path: circle(37% at center);
+}
+
+div.cardH p {
+    font-size: 22px;
+    padding: 1em 0.1em;
+}
+
+div.cardH a button {
+    text-decoration: none;
+    font-weight: bold;
+    color: #162c3c;
+    font-size: 17px;
+    background-color: #3c6e96;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    border: 3px solid #162c3c;
+    padding: 0.4em 1em;
+    margin: 0.5em;
+}
+
+div.cardH a:hover button {
+    background-color: #dcebfa;
+}
+
+/* Chart section */
+.chartContainer {
+    color: #162c3c;
+    background-color: #7ab0dc;
+}
+
+.articleHeading {
+    margin: 0;
+    padding: 0.5em 0.12em 0.07em 0.3em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.chartContainer img {
+    display: block;
+    width: 600px;
+    height: 420px;
+    padding: 0.7em 1.6em;
+}
+
+.chartContainer > p {
+    line-height: 1.5;
+    padding-left: 1em;
+    text-align: center;
+}
+
+.chartContainer > p::first-line {
+    font-weight: bold;
+    line-height: 2;
+}
+
+.chartContainer > .actionCall {
+    padding-bottom: 15px;
+}
+
+.chartContainer > .actionCall a button {
+    text-decoration: none;
+    font-weight: bold;
+    color: #162c3c;
+    font-size: 17px;
+    background-color: #3c6e96;
+    border: 3px solid #162c3c;
+    padding: 0.4em 1em;
+    -webkit-transition: all 0.45s;
+    -o-transition: all 0.45s;
+    transition: all 0.45s;
+    margin-top: 0.7em;
+}
+
+.chartContainer > .actionCall a:hover button {
+    background-color: #dcebfa;
+}
+
+
+/* Article styles (our partners) */
+.articleContainer {
+    color: #dcebfa;
+    background-color: #162c3c;
+}
+
+.articleContainer dl {
+    margin-bottom: 0;
+    padding: 1em;
+}
+
+.articleContainer dl a {
+    line-height: 0.25em;
+    font-style: italic;
+    color: inherit;
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.articleContainer dl a:hover {
+    font-size: 110%;
+}
+
+.articleContainer dl a:focus {
+    color: #7ab0dc;
+    font-size: 112%;
+}
+
+.articleContainer dl a:visited {
+    color: #3c6e96;
+    font-style: normal;
+    text-decoration: none;
+}

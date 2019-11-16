@@ -1,0 +1,194 @@
+/*
+    The Final Project (Marine Life Care Centre).
+
+    style.css
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    General style rules for header and footer.
+    Applied to all pages.
+*/
+
+.dHidden {
+    display: none;
+}
+
+/* Nav styles */
+#navDropDown,
+#barsBlock {
+    display: none;
+}
+
+#navList > nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(10, 20, 25, 0.6);
+    -webkit-box-shadow: 2px 4px 7px #162c3c;
+    box-shadow: 2px 4px 7px #162c3c;
+}
+
+#navList ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+#navList > nav > a {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#navList > nav img {
+    height: 5em;
+}
+
+#navList > nav li:first-child {
+    float: left;
+    padding-left: 7em;
+}
+
+#navList > nav li {
+    float: left;
+    padding: 1.45em;
+}
+
+#navList > nav li a {
+    color: white;
+    opacity: 0.6;
+    text-align: left;
+    text-decoration: none;
+    position: relative;
+}
+
+#navList > nav li i[class^="fas"] {
+    float: left;
+    opacity: 0;
+    padding-right: 5px;
+    color: white;
+}
+
+#navList a.navCurrent {
+    opacity: 1;
+    font-weight: bold;
+}
+
+/*Nav animation*/
+#navList > nav li * {
+    -webkit-transition: opacity 0.47s, -webkit-transform 0.52s;
+    transition: opacity 0.47s, -webkit-transform 0.52s;
+    -o-transition: opacity 0.47s, transform 0.52s;
+    transition: opacity 0.47s, transform 0.52s;
+    transition: opacity 0.47s, transform 0.52s, -webkit-transform 0.52s;
+}
+
+#navList > nav li:hover a,
+#navList li:hover i[class^="fas"] {
+    opacity: 1;
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+
+/* Intro section styles */
+section.descIntro {
+    clear: both;
+    min-height: 500px;
+    background-color: #3c6e96;
+    background-repeat: no-repeat;
+    background-position: left top;
+    -webkit-background-size: auto auto;
+    background-size: cover;
+    -webkit-box-shadow: 3px 3px 20px #0a1419 inset, -1em 0 2em #162c3c inset;
+    box-shadow: 7em -7em 22em #0a1419 inset, -7em 7em 22em #3c6e96 inset;
+}
+
+section.descIntro h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: #dcebfa;
+    font-size: 7em;
+    margin: 10%;
+    text-shadow: 2px 3px 10px #0a1419;
+    opacity: 0.76;
+    -webkit-filter: blur(0.07em);
+    filter: blur(0.07em);
+    -webkit-transition: all 0.42s;
+    -o-transition: all 0.42s;
+    transition: all 0.42s;
+}
+
+section.descIntro h2 {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    color: #dcebfa;
+    font-size: 3em;
+    margin: 0;
+    margin-top: 5em;
+    margin-left: 30%;
+    text-shadow: 2px 2px 5px #0a1419;
+    opacity: 0.7;
+}
+
+section.descIntro:hover h1 {
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+
+/* Content styles */
+.elContent {
+    background-color: #dcebfa;
+}
+
+/* Footer styles */
+#mainFooter {
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 1% 0;
+    background-color: #0a1419;
+    color: hsla(210, 75%, 92%, 1);
+}
+
+#mainFooter ul {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+#mainFooter ul li {
+    padding: 0.3em 1px;
+}
+
+#mainFooter a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#mainFooter a:hover {
+    font-weight: bold;
+}
+
+#mainFooter p.credits {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-style: oblique;
+    font-size: 15px;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+}
+
+#mainFooter center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -20px;
+}

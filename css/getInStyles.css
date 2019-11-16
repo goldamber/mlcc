@@ -1,0 +1,179 @@
+/*
+    The Final Project (Marine Life Care Centre).
+
+    getIn.css
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    Style rules for 'Get involved' page.
+*/
+
+
+/* Print styles */
+@media print {
+    .getInCard > p:first-of-type {
+        font-weight: bold;
+    }
+
+    /* Groups */
+    .infoGroup {
+        overflow: hidden;
+    }
+
+    .infoGroup > p {
+        text-align: justify;
+    }
+
+    .infoGroup > p:first-of-type {
+        font-weight: bold;
+    }
+
+    .infoGroup > img {
+        float: right;
+        width: 30%;
+        height: 30%;
+        -webkit-clip-path: circle(40% at center);
+        clip-path: circle(40% at center);
+    }
+}
+
+/* Web styles */
+@media only screen and (min-width: 772px) {
+
+    /* Intro clock */
+    .getInCard:first-of-type {
+        float: left;
+    }
+
+    .getInCard:last-of-type {
+        float: right;
+    }
+
+    .getInCard {
+        max-width: 40%;
+    }
+}
+
+/* Mobile styles */
+@media only screen {
+
+    /* Intro clock */
+    .elContent > div.printSection:first-of-type {
+        background-color: #3c6e96;
+        overflow: hidden;
+        padding: 1.2em;
+    }
+
+    h3 {
+        text-align: center;
+        color: #dcebfa;
+        font-size: 2em;
+        margin: 0.2em;
+    }
+
+    .getInCard {
+        margin: 1em;
+        border: 3px solid #162c3c;
+        padding: 0.7em;
+        background-color: #7ab0dc;
+        color: #162c3c;
+        text-align: center;
+    }
+
+    .getInCard > img {
+        margin: 0.5em;
+        width: 50%;
+    }
+
+    .getInCard > p {
+        text-align: center;
+        padding: 0.3em;
+    }
+
+    .getInCard > p:first-of-type {
+        font-weight: bold;
+    }
+
+    .getInCard > a {
+        display: block;
+        margin: 0.3em;
+        color: #162c3c;
+        font-weight: bold;
+        padding: 0.5em;
+        background-color: #7ab0dc;
+        border: 2px solid #162c3c;
+        -webkit-border-radius: 2em;
+        border-radius: 2em;
+        text-decoration: none;
+    }
+
+    .getInCard > a:hover {
+        background-color: #dcebfa;
+    }
+
+    /* Video block */
+    .helpBlock {
+        background-color: #7ab0dc;
+        text-align: center;
+        padding-bottom: 1.5em;
+    }
+
+    .helpBlock h3 {
+        color: #162c3c;
+        margin: 0;
+        padding: 1em;
+    }
+
+    video {
+        -webkit-border-radius: 2em;
+        border-radius: 2em;
+        border: 3px solid #162c3c;
+    }
+
+    /* Groups */
+    .infoGroup {
+        margin: 1.5em;
+        background-color: #dcebfa;
+        overflow: hidden;
+        position: relative;
+        outline: 5px dashed #0a1419;
+    }
+
+    .infoGroup > p {
+        margin: 1.5em;
+        text-align: justify;
+    }
+
+    .infoGroup > p:first-of-type {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin: 1.2em;
+    }
+
+    .infoGroup > img {
+        float: right;
+        margin: 1em;
+        width: 30%;
+        height: 30%;
+        -webkit-clip-path: circle(40% at center);
+        clip-path: circle(40% at center);
+    }
+
+    .infoGroup > a {
+        display: block;
+        clear: right;
+        margin: 1em;
+        color: #162c3c;
+        font-weight: bold;
+        padding: 1em 2em;
+        background-color: #7ab0dc;
+        border: 2px solid #162c3c;
+        -webkit-border-radius: 1em;
+        border-radius: 1em;
+        text-decoration: none;
+    }
+
+    .infoGroup > a:hover {
+        background-color: #dcebfa;
+    }
+}

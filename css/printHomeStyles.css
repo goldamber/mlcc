@@ -1,0 +1,31 @@
+/*
+    The Final Project (Marine Life Care Centre).
+
+    printHomeStyles.css
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    Style rules for Home page under the print view.
+*/
+
+/* Card styles */
+div.cardH {
+    float: left;
+}
+
+div.cardH img {
+    width: 2.5in;
+    height: 2.5in;
+    -webkit-clip-path: circle(0.9in at center);
+    clip-path: circle(0.9in at center);
+}
+
+div.cardH {
+    width: 2.5in;
+    margin: 0.1in;
+}
+
+/* Chart styles */
+.elContent > center {
+    text-align: left;
+}
