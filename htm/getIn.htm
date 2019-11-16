@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    The Final Project (Marine Life Care Centre).
+
+    getIn.htm
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    This page offers the information about the ways a visitor can help MLCC.
+    -->
+
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <meta name="author" content="Olena Kostrova" />
+    <meta name="classification" content="Marine life" />
+    <meta name="description" content="Website for nonprofit organisation which provides consevation value for for marine animals and focuses on marine research" />
+    <meta name="generator" content="Brackets" />
+    <meta name="rating" content="general" />
+    <meta name="keywords" content="marine wildlife, marine mammals, research, conservation, cetaceans, pinnipeds, rescue" />
+
+    <title>MLCC</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- General stylesheets -->
+    <link rel="stylesheet" rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" rel="stylesheet" href="../css/fontawesome/all.css">
+    <link rel="stylesheet" rel="stylesheet" href="../css/getInStyles.css">
+    <!-- Desktop styles -->
+    <link rel="stylesheet" href="../css/style.css" rel="stylesheet" media="screen and (min-width: 772px)">
+    <!-- Mobile styles -->
+    <link rel="stylesheet" href="../css/mobile.css" media="only screen and (max-width: 772px)">
+    <link rel="stylesheet" href="../css/mobileHomeStyles.css" media="only screen and (max-width: 772px)">
+    <!-- Print -->
+    <link rel="stylesheet" href="../css/print.css" media="print">
+
+    <!-- Scripts -->
+    <script src="../js/dropDown.js"></script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <header id="navList" class="printHidden">
+        <nav>
+            <a href="../index.html" style="padding: 5px;">
+                <img src="../img/Logo.png" alt="MLCC logo.">
+            </a>
+
+            <ul class="mobHidden">
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+
+                <li><a href="shelter.htm"><i class="fas fa-heart"></i> Shelter</a></li>
+
+                <li><a href="species.htm"><i class="fas fa-search"></i> Species guide</a></li>
+
+                <li><a href="#" class="navCurrent"><i class="fas fa-hands-helping"></i> Get involved</a></li>
+            </ul>
+
+            <div id="navDropDown">
+                <a href="shelter.htm"><i class="fas fa-heart"></i> Shelter</a>
+
+                <a href="species.htm"><i class="fas fa-search"></i> Species guide</a>
+
+                <a href="#"><i class="fas fa-hands-helping"></i> Get involved</a>
+
+                <a href="news.htm"><i class="fas fa-newspaper"></i> News</a>
+
+
+
+                <a href="../cref.html"><i class="fas fa-bookmark"></i> Cross reference page</a>
+            </div>
+
+            <a id="barsBlock" onclick="dropDownMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Intro section -->
+    <section class="descIntro mobHidden" style="background-image: url(../img/getInIntro.jpg);">
+        <h2>Get involved</h2>
+    </section>
+
+    <!-- Content -->
+    <div class="elContent">
+        <div class="printSection">
+            <h3>How do we help ocean creatures?</h3>
+            <div class="getInCard">
+                <img class="printHidden" src="../img/getInCard0.jpg" alt="Research">
+                <p id="pResearch">Research</p>
+                <p>We study different kind of animals in order to understand their needs and conservation status. This knoledge helps us to provide better conditions for auqatic creatures. All our research results we share with schools and universities.</p>
+                <a class="printHidden" href="species.htm">Learn more</a>
+            </div>
+
+            <div id="divInShelter" class="getInCard">
+                <img class="printHidden" src="../img/getInCard1.jpg" alt="Shelter">
+                <p>Shelter</p>
+                <p>We provide conservation options for rescued animals. We usually keep them for a couple of month depending on their health condition. However there are some individuals who were injured badly, so they are not able to come back to the wild.</p>
+                <a id="aShelter" class="printHidden" href="species.htm">Learn more</a>
+            </div>
+        </div>
+
+        <div class="helpBlock printSection">
+            <h3 id="hCallForHelp">Help us to save these beautiful animals</h3>
+            <video id="videoBlock" controls muted class="printHidden mobHidden">
+                <source src="../video/Seal.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+
+            <div class="infoGroup">
+                <img src="../img/getIn2.jpg" alt="Donate" />
+                <p>Donate</p>
+                <p>Donate money, so we could provide veterinary care for rescued animals and contidue doing our research projects.</p>
+
+                <a href="donate.htm" class="printHidden">Donate</a>
+            </div>
+
+            <div class="infoGroup">
+                <img src="../img/getIn1.jpg" alt="Adopt" />
+                <p>Adopt</p>
+                <p>Choose an animal to adopt. By doing so, you ensure its welfare and receive a welcome package from us. <span id="enHeart">&#9829;</span></p>
+
+                <a id="aAdopt" href="adopt.htm" class="printHidden">Adopt</a>
+            </div>
+
+            <div id="divVolunteer" class="infoGroup">
+                <img src="../img/getIn3.jpg" alt="Volunteer" />
+                <p>Volunteer</p>
+                <p>Volunteer for us and learn more about the ocean. There are different tasks you could do depending on your skills and time. Check it out!</p>
+
+                <a href="volunteer.htm" class="printHidden">Volunteer</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="mainFooter" class="printHidden">
+        <ul class="mobHidden">
+            <li><a href="news.htm">News</a></li>
+
+            <li><a href="../cref.html">Cross Reference Page</a></li>
+        </ul>
+
+        <center>
+            <q class="mobHidden">Protect the ocean - Protect your future.</q><br />
+            <span id="yearFooter">MLCC</span>
+        </center>
+
+        <p class="credits"><span id="lastModified"></span>Website by Olena Kostrova</p>
+        <script src="../js/getYear.js"></script>
+    </footer>
+</body>
+
+</html>

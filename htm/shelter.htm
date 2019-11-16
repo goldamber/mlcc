@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    The Final Project (Marine Life Care Centre).
+
+    shelter.htm
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    List of animals in shelter.
+    -->
+
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <meta name="author" content="Olena Kostrova" />
+    <meta name="classification" content="Marine life" />
+    <meta name="description" content="Website for nonprofit organisation which provides consevation value for for marine animals and focuses on marine research" />
+    <meta name="generator" content="Brackets" />
+    <meta name="rating" content="general" />
+    <meta name="keywords" content="marine wildlife, marine mammals, research, conservation, cetaceans, pinnipeds, rescue" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <title>MLCC</title>
+
+    <!-- General stylesheets -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/fontawesome/all.css">
+    <link rel="stylesheet" href="../css/speciesStyles.css">
+    <!-- Desktop styles -->
+    <link href="../css/style.css" rel="stylesheet" media="screen and (min-width: 772px)">
+    <!-- Mobile styles -->
+    <link rel="stylesheet" href="../css/mobile.css" media="only screen and (max-width: 772px)">
+    <link rel="stylesheet" href="../css/mobileHomeStyles.css" media="only screen and (max-width: 772px)">
+    <!-- Print -->
+    <link rel="stylesheet" href="../css/print.css" media="print">
+
+    <!-- Scripts -->
+    <script src="../js/dropDown.js"></script>
+    <script src="../js/slider.js"></script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <header id="navList" class="printHidden">
+        <nav>
+            <a href="../index.html" style="padding: 5px;">
+                <img src="../img/Logo.png" alt="MLCC logo.">
+            </a>
+
+            <ul class="mobHidden">
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+
+                <li><a href="shelter.htm" class="navCurrent"><i class="fas fa-heart"></i> Shelter</a></li>
+
+                <li><a href="species.htm"><i class="fas fa-search"></i> Species guide</a></li>
+
+                <li><a href="getIn.htm"><i class="fas fa-hands-helping"></i> Get involved</a></li>
+            </ul>
+
+            <div id="navDropDown">
+                <a href="#"><i class="fas fa-heart"></i> Shelter</a>
+
+                <a href="species.htm"><i class="fas fa-search"></i> Species guide</a>
+
+                <a href="getIn.htm"><i class="fas fa-hands-helping"></i> Get involved</a>
+
+                <a href="news.htm"><i class="fas fa-newspaper"></i> News</a>
+
+                <a href="../cref.html"><i class="fas fa-bookmark"></i> Cross reference page</a>
+            </div>
+
+            <a id="barsBlock" onclick="dropDownMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Intro section -->
+    <section class="descIntro mobHidden" style="background-image: url(../img/shelterIntro.jpg);">
+        <h2>Shelter</h2>
+    </section>
+
+    <!-- Content -->
+    <div class="elContent">
+        <article id="helpArticle" class="askForHelp printSection">
+            <h3>They need your help</h3>
+            <p>As nonprofit organisation we totally depend on people who support us. Help us to provide better living conditions for these animals. You are their only hope!</p>
+
+            <a class="printHidden" href="donate.htm">Donate</a>
+            <a class="printHidden" href="adopt.htm">Adopt</a>
+        </article>
+
+        <article class="mobHidden printHidden">
+            <h3>We help young turtles to survive their first steps</h3>
+
+            <object id="videoTurtles" height="450" data="../video/SeaTurtles.mp4">
+            </object>
+        </article>
+
+        <div class="animalBlock">
+            <h3>Animals in shelter</h3>
+            <div class="animalList">
+                <h4>Dolphins</h4>
+                <ul>
+                    <li>
+                        <div class="animalGroup printSection">
+                            <img src="../img/shelter/rockyM.jpg" alt="Rocky" />
+                            <p>Rocky</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>mammals</p>
+                                    <p><span>Species:&nbsp;&nbsp;&nbsp;&nbsp;</span>pacific white-sided dolphin</p>
+                                    <p><span>Gender:&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="fas fa-mars"></i></p>
+                                    <p><span>Diet:&nbsp;&nbsp;&nbsp;&nbsp;</span>carnivore</p>
+                                    <p><span>Age:&nbsp;&nbsp;&nbsp;&nbsp;</span>12</p>
+
+
+                                    <div class="slideBlock printHidden">
+                                        <div class="slide">
+                                            <img src="../img/shelter/rocky1.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <div class="slide">
+                                            <img src="../img/shelter/rocky2.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                        <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="printHidden">
+                                    <p class="pHead">Support Rocky</p>
+                                    <p>Our animals need veterinary support and every day care. As a nonprofit organization we totally depend on people who care about marine wildlife.<br /><br />If you like this animal and want to help, you can adopt this creature. There are different packages that would help our animals to recover and live happily.</p>
+                                    <br />
+                                    <p class="pHead">Adoption packages:</p>
+
+                                    <ul>
+                                        <li><span>Ocean explorer</span> - you'll get adoption certificate + Animal Info card (10$).</li>
+                                        <li><span>Animal lover</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal (15$).</li>
+                                        <li><span>Marine whisperer</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal (20$).</li>
+                                        <li><span>Sea creature</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal + free pass for 2 weeks (25$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li id="liAngel">
+                        <div class="animalGroup printSection">
+                            <img src="../img/shelter/angelM.jpg" alt="Angel" />
+                            <p>Angel</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>mammals</p>
+                                    <p><span>Species:&nbsp;&nbsp;&nbsp;&nbsp;</span>bottlenose dolphin</p>
+                                    <p><span>Gender:&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="fas fa-venus"></i></p>
+                                    <p><span>Diet:&nbsp;&nbsp;&nbsp;&nbsp;</span>carnivore</p>
+                                    <p><span>Age:&nbsp;&nbsp;&nbsp;&nbsp;</span>5</p>
+
+                                    <div class="slideBlock printHidden">
+                                        <div class="slide">
+                                            <img src="../img/shelter/angel1.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <div class="slide">
+                                            <img src="../img/shelter/angel2.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                        <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="printHidden">
+                                    <p class="pHead">Support Angel</p>
+                                    <p>Our animals need veterinary support and every day care. As a nonprofit organization we totally depend on people who care about marine wildlife.<br /><br />If you like this animal and want to help, you can adopt this creature. There are different packages that would help our animals to recover and live happily.</p>
+                                    <br />
+                                    <p class="pHead">Adoption packages:</p>
+
+                                    <ul>
+                                        <li><span>Ocean explorer</span> - you'll get adoption certificate + Animal Info card (10$).</li>
+                                        <li><span>Animal lover</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal (15$).</li>
+                                        <li><span>Marine whisperer</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal (20$).</li>
+                                        <li><span>Sea creature</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal + free pass for 2 weeks (25$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4>Turtles</h4>
+                <ul>
+                    <li>
+                        <div class="animalGroup printSection">
+                            <img src="../img/shelter/rainbowM.jpg" alt="Rainbow" />
+                            <p>Rainbow</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>reptilia</p>
+                                    <p><span>Species:&nbsp;&nbsp;&nbsp;&nbsp;</span>green sea turtle</p>
+                                    <p><span>Gender:&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="fas fa-venus"></i></p>
+                                    <p><span>Diet:&nbsp;&nbsp;&nbsp;&nbsp;</span>herbivore</p>
+                                    <p><span>Age:&nbsp;&nbsp;&nbsp;&nbsp;</span>16</p>
+
+
+                                    <div class="slideBlock printHidden">
+                                        <div class="slide">
+                                            <img src="../img/shelter/rainbow1.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <div class="slide">
+                                            <img src="../img/shelter/rainbow2.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                        <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="printHidden">
+                                    <p class="pHead">Support Rainbow</p>
+                                    <p>Our animals need veterinary support and every day care. As a nonprofit organization we totally depend on people who care about marine wildlife.<br /><br />If you like this animal and want to help, you can adopt this creature. There are different packages that would help our animals to recover and live happily.</p>
+                                    <br />
+                                    <p class="pHead">Adoption packages:</p>
+
+                                    <ul>
+                                        <li><span>Ocean explorer</span> - you'll get adoption certificate + Animal Info card (10$).</li>
+                                        <li><span>Animal lover</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal (15$).</li>
+                                        <li><span>Marine whisperer</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal (20$).</li>
+                                        <li><span>Sea creature</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal + free pass for 2 weeks (25$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4>Seals</h4>
+                <ul id="ulSeals">
+                    <li>
+                        <div class="animalGroup printSection">
+                            <img src="../img/shelter/noahM.jpg" alt="Noah" />
+                            <p>Noah</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>mammalia</p>
+                                    <p><span>Species:&nbsp;&nbsp;&nbsp;&nbsp;</span>fur seal</p>
+                                    <p><span>Gender:&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="fas fa-mars"></i></p>
+                                    <p><span>Diet:&nbsp;&nbsp;&nbsp;&nbsp;</span>carnivore</p>
+                                    <p><span>Age:&nbsp;&nbsp;&nbsp;&nbsp;</span>3</p>
+
+
+                                    <div class="slideBlock printHidden">
+                                        <div class="slide">
+                                            <img src="../img/shelter/noah1.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <div class="slide">
+                                            <img src="../img/shelter/noah2.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                        <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="printHidden">
+                                    <p class="pHead">Support Noah</p>
+                                    <p>Our animals need veterinary support and every day care. As a nonprofit organization we totally depend on people who care about marine wildlife.<br /><br />If you like this animal and want to help, you can adopt this creature. There are different packages that would help our animals to recover and live happily.</p>
+                                    <br />
+                                    <p class="pHead">Adoption packages:</p>
+
+                                    <ul>
+                                        <li><span>Ocean explorer</span> - you'll get adoption certificate + Animal Info card (10$).</li>
+                                        <li><span>Animal lover</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal (15$).</li>
+                                        <li><span>Marine whisperer</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal (20$).</li>
+                                        <li><span>Sea creature</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal + free pass for 2 weeks (25$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="animalGroup printSection">
+                            <img src="../img/shelter/melodyM.jpg" alt="Melody" />
+                            <p>Melody</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>mammalia</p>
+                                    <p><span>Species:&nbsp;&nbsp;&nbsp;&nbsp;</span>california sea lion</p>
+                                    <p><span>Gender:&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="fas fa-venus"></i></p>
+                                    <p><span>Diet:&nbsp;&nbsp;&nbsp;&nbsp;</span>carnivore</p>
+                                    <p><span>Age:&nbsp;&nbsp;&nbsp;&nbsp;</span>4</p>
+
+
+                                    <div class="slideBlock printHidden">
+                                        <div class="slide">
+                                            <img src="../img/shelter/melody1.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <div class="slide">
+                                            <img src="../img/shelter/melody2.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                        <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="printHidden">
+                                    <p class="pHead">Support Melody</p>
+                                    <p>Our animals need veterinary support and every day care. As a nonprofit organization we totally depend on people who care about marine wildlife.<br /><br />If you like this animal and want to help, you can adopt this creature. There are different packages that would help our animals to recover and live happily.</p>
+                                    <br />
+                                    <p class="pHead">Adoption packages:</p>
+
+                                    <ul>
+                                        <li><span>Ocean explorer</span> - you'll get adoption certificate + Animal Info card (10$).</li>
+                                        <li><span>Animal lover</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal (15$).</li>
+                                        <li><span>Marine whisperer</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal (20$).</li>
+                                        <li><span>Sea creature</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal + free pass for 2 weeks (25$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="animalGroup printSection">
+                            <img src="../img/shelter/blitzenM.jpg" alt="Blitzen" />
+                            <p>Blitzen</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>mammalia</p>
+                                    <p><span>Species:&nbsp;&nbsp;&nbsp;&nbsp;</span>california sea lion</p>
+                                    <p><span>Gender:&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="fas fa-mars"></i></p>
+                                    <p><span>Diet:&nbsp;&nbsp;&nbsp;&nbsp;</span>carnivore</p>
+                                    <p><span>Age:&nbsp;&nbsp;&nbsp;&nbsp;</span>5</p>
+
+
+                                    <div class="slideBlock printHidden">
+                                        <div class="slide">
+                                            <img src="../img/shelter/blitzen1.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <div class="slide">
+                                            <img src="../img/shelter/blitzen2.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                        <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="printHidden">
+                                    <p class="pHead">Support Blitzen</p>
+                                    <p>Our animals need veterinary support and every day care. As a nonprofit organization we totally depend on people who care about marine wildlife.<br /><br />If you like this animal and want to help, you can adopt this creature. There are different packages that would help our animals to recover and live happily.</p>
+                                    <br />
+                                    <p class="pHead">Adoption packages:</p>
+
+                                    <ul>
+                                        <li><span>Ocean explorer</span> - you'll get adoption certificate + Animal Info card (10$).</li>
+                                        <li><span>Animal lover</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal (15$).</li>
+                                        <li><span>Marine whisperer</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal (20$).</li>
+                                        <li><span>Sea creature</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal + free pass for 2 weeks (25$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4>Sea otters</h4>
+                <ul>
+                    <li id="liRex">
+                        <div class="animalGroup printSection">
+                            <img src="../img/shelter/rexM.jpg" alt="Rex" />
+                            <p>Rex</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>mammals</p>
+                                    <p><span>Species:&nbsp;&nbsp;&nbsp;&nbsp;</span>sea otter</p>
+                                    <p><span>Gender:&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="fas fa-mars"></i></p>
+                                    <p><span>Diet:&nbsp;&nbsp;&nbsp;&nbsp;</span>carnivore</p>
+                                    <p><span>Age:&nbsp;&nbsp;&nbsp;&nbsp;</span>4</p>
+
+
+                                    <div class="slideBlock printHidden">
+                                        <div class="slide">
+                                            <img src="../img/shelter/rex1.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <div class="slide">
+                                            <img src="../img/shelter/rex2.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                        <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="printHidden">
+                                    <p class="pHead">Support Rex</p>
+                                    <p>Our animals need veterinary support and every day care. As a nonprofit organization we totally depend on people who care about marine wildlife.<br /><br />If you like this animal and want to help, you can adopt this creature. There are different packages that would help our animals to recover and live happily.</p>
+                                    <br />
+                                    <p class="pHead">Adoption packages:</p>
+
+                                    <ul>
+                                        <li><span>Ocean explorer</span> - you'll get adoption certificate + Animal Info card (10$).</li>
+                                        <li><span>Animal lover</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal (15$).</li>
+                                        <li><span>Marine whisperer</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal (20$).</li>
+                                        <li><span>Sea creature</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal + free pass for 2 weeks (25$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="animalGroup printSection">
+                            <img src="../img/shelter/kiaraM.jpg" alt="Kiara" />
+                            <p>Kiara</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>mammals</p>
+                                    <p><span>Species:&nbsp;&nbsp;&nbsp;&nbsp;</span>sea otter</p>
+                                    <p><span>Gender:&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="fas fa-venus"></i></p>
+                                    <p><span>Diet:&nbsp;&nbsp;&nbsp;&nbsp;</span>carnivore</p>
+                                    <p><span>Age:&nbsp;&nbsp;&nbsp;&nbsp;</span>3</p>
+
+                                    <div class="slideBlock printHidden">
+                                        <div class="slide">
+                                            <img src="../img/shelter/kiara1.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <div class="slide">
+                                            <img src="../img/shelter/kiara2.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                        <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="printHidden">
+                                    <p class="pHead">Support Kiara</p>
+                                    <p>Our animals need veterinary support and every day care. As a nonprofit organization we totally depend on people who care about marine wildlife.<br /><br />If you like this animal and want to help, you can adopt this creature. There are different packages that would help our animals to recover and live happily.</p>
+                                    <br />
+                                    <p class="pHead">Adoption packages:</p>
+
+                                    <ul>
+                                        <li><span>Ocean explorer</span> - you'll get adoption certificate + Animal Info card (10$).</li>
+                                        <li><span>Animal lover</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal (15$).</li>
+                                        <li><span>Marine whisperer</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal (20$).</li>
+                                        <li><span>Sea creature</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal + free pass for 2 weeks (25$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <h3>Released animals</h3>
+            <div id="divReleased" class="animalList">
+                <h4>Dolphins</h4>
+                <ul>
+                    <li>
+                        <div class="animalGroup printSection">
+                            <img src="../img/shelter/noelM.jpg" alt="Noel" />
+                            <p>Noel</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>mammals</p>
+                                    <p><span>Species:&nbsp;&nbsp;&nbsp;&nbsp;</span>common dolphin</p>
+                                    <p><span>Gender:&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="fas fa-mars"></i></p>
+                                    <p><span>Diet:&nbsp;&nbsp;&nbsp;&nbsp;</span>carnivore</p>
+                                    <p><span>Age:&nbsp;&nbsp;&nbsp;&nbsp;</span>5</p>
+
+
+                                    <div class="slideBlock printHidden">
+                                        <div class="slide">
+                                            <img src="../img/shelter/noel1.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <div class="slide">
+                                            <img src="../img/shelter/noel2.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                        <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="printHidden">
+                                    <p class="pHead">Support Noel</p>
+                                    <p>We track released animals and study them using modern technology. We have learned a lot since our first release. Today we know more about the lifestyle of marine creatures, their behavior and migration routes.<br /><br />Help us to study this incredible life.</p>
+                                    <br />
+                                    <p class="pHead">Adoption packages:</p>
+
+                                    <ul>
+                                        <li><span>Ocean explorer</span> - you'll get adoption certificate + Animal Info card (10$).</li>
+                                        <li><span>Animal lover</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal (15$).</li>
+                                        <li><span>Marine whisperer</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal (20$).</li>
+                                        <li><span>Sea creature</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal + free pass for 2 weeks (25$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li id="liFender">
+                        <div id="slFender" class="animalGroup printSection">
+                            <img src="../img/shelter/fenderM.jpg" alt="Fender" />
+                            <p>Fender</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>mammals</p>
+                                    <p><span>Species:&nbsp;&nbsp;&nbsp;&nbsp;</span>bottlenose dolphin</p>
+                                    <p><span>Gender:&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="fas fa-mars"></i></p>
+                                    <p><span>Diet:&nbsp;&nbsp;&nbsp;&nbsp;</span>carnivore</p>
+                                    <p><span>Age:&nbsp;&nbsp;&nbsp;&nbsp;</span>5</p>
+
+                                    <div class="slideBlock printHidden">
+                                        <div class="slide">
+                                            <img src="../img/shelter/fender1.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <div class="slide">
+                                            <img src="../img/shelter/fender2.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                        <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="printHidden">
+                                    <p class="pHead">Support Fender</p>
+                                    <p>We track released animals and study them using modern technology. We have learned a lot since our first release. Today we know more about the lifestyle of marine creatures, their behavior and migration routes.<br /><br />Help us to study this incredible life.</p>
+                                    <br />
+                                    <p class="pHead">Adoption packages:</p>
+
+                                    <ul>
+                                        <li><span>Ocean explorer</span> - you'll get adoption certificate + Animal Info card (10$).</li>
+                                        <li><span>Animal lover</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal (15$).</li>
+                                        <li><span>Marine whisperer</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal (20$).</li>
+                                        <li><span>Sea creature</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal + free pass for 2 weeks (25$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4>Seals</h4>
+                <ul>
+                    <li id="liLuna">
+                        <div class="animalGroup printSection">
+                            <img src="../img/shelter/lunaM.jpg" alt="Luna" />
+                            <p>Luna</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>mammalia</p>
+                                    <p><span>Species:&nbsp;&nbsp;&nbsp;&nbsp;</span>california sea lion</p>
+                                    <p><span>Gender:&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="fas fa-venus"></i></p>
+                                    <p><span>Diet:&nbsp;&nbsp;&nbsp;&nbsp;</span>carnivore</p>
+                                    <p><span>Age:&nbsp;&nbsp;&nbsp;&nbsp;</span>3</p>
+
+
+                                    <div class="slideBlock printHidden">
+                                        <div class="slide">
+                                            <img src="../img/shelter/luna1.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <div class="slide">
+                                            <img src="../img/shelter/luna2.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                        <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="printHidden">
+                                    <p class="pHead">Support Luna</p>
+                                    <p>We track released animals and study them using modern technology. We have learned a lot since our first release. Today we know more about the lifestyle of marine creatures, their behavior and migration routes.<br /><br />Help us to study this incredible life.</p>
+                                    <br />
+                                    <p class="pHead">Adoption packages:</p>
+
+                                    <ul>
+                                        <li><span>Ocean explorer</span> - you'll get adoption certificate + Animal Info card (10$).</li>
+                                        <li><span>Animal lover</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal (15$).</li>
+                                        <li><span>Marine whisperer</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal (20$).</li>
+                                        <li><span>Sea creature</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal + free pass for 2 weeks (25$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="animalGroup printSection">
+                            <img src="../img/shelter/howardM.jpg" alt="Howard" />
+                            <p>Howard</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>mammalia</p>
+                                    <p><span>Species:&nbsp;&nbsp;&nbsp;&nbsp;</span>harbor seal</p>
+                                    <p><span>Gender:&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="fas fa-mars"></i></p>
+                                    <p><span>Diet:&nbsp;&nbsp;&nbsp;&nbsp;</span>carnivore</p>
+                                    <p><span>Age:&nbsp;&nbsp;&nbsp;&nbsp;</span>7</p>
+
+
+                                    <div class="slideBlock printHidden">
+                                        <div class="slide">
+                                            <img src="../img/shelter/howard1.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <div class="slide">
+                                            <img src="../img/shelter/howard2.jpg">
+                                            <div class="arrowsBlock">
+                                            </div>
+                                        </div>
+
+                                        <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                        <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="printHidden">
+                                    <p class="pHead">Support Howard</p>
+                                    <p>Our animals need veterinary support and every day care. As a nonprofit organization we totally depend on people who care about marine wildlife.<br /><br />If you like this animal and want to help, you can adopt this creature. There are different packages that would help our animals to recover and live happily.</p>
+                                    <br />
+                                    <p class="pHead">Adoption packages:</p>
+
+                                    <ul>
+                                        <li><span>Ocean explorer</span> - you'll get adoption certificate + Animal Info card (10$).</li>
+                                        <li><span>Animal lover</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal (15$).</li>
+                                        <li><span>Marine whisperer</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal (20$).</li>
+                                        <li><span>Sea creature</span> - you'll get adoption certificate + Animal Info card + a printed photo of this animal + 1 hour interaction with this animal + free pass for 2 weeks (25$).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="mainFooter" class="printHidden">
+        <ul class="mobHidden">
+            <li><a href="news.htm">News</a></li>
+
+            <li><a href="../cref.html">Cross Reference Page</a></li>
+        </ul>
+
+        <center>
+            <q class="mobHidden">Protect the ocean - Protect your future.</q><br />
+            <span id="yearFooter">MLCC</span>
+        </center>
+
+        <p class="credits"><span id="lastModified"></span>Website by Olena Kostrova</p>
+        <script src="../js/getYear.js"></script>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    The Final Project (Marine Life Care Centre).
+
+    donate.htm
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    Donation form.
+    -->
+
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <meta name="author" content="Olena Kostrova" />
+    <meta name="classification" content="Marine life" />
+    <meta name="description" content="Website for nonprofit organisation which provides consevation value for for marine animals and focuses on marine research" />
+    <meta name="generator" content="Brackets" />
+    <meta name="rating" content="general" />
+    <meta name="keywords" content="marine wildlife, marine mammals, research, conservation, cetaceans, pinnipeds, rescue" />
+
+    <title>MLCC</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- General stylesheets -->
+    <link rel="stylesheet" rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" rel="stylesheet" href="../css/fontawesome/all.css">
+    <link rel="stylesheet" rel="stylesheet" href="../css/formStyles.css">
+    <!-- Desktop styles -->
+    <link rel="stylesheet" href="../css/style.css" rel="stylesheet" media="screen and (min-width: 772px)">
+    <!-- Mobile styles -->
+    <link rel="stylesheet" href="../css/mobile.css" media="only screen and (max-width: 772px)">
+    <!-- Print -->
+    <link rel="stylesheet" href="../css/print.css" media="print">
+
+    <!-- Scripts -->
+    <script src="../js/dropDown.js"></script>
+    <script src="../js/validation.js"></script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <header id="navList" class="printHidden">
+        <nav>
+            <a href="../index.html" style="padding: 5px;">
+                <img src="../img/Logo.png" alt="MLCC logo.">
+            </a>
+
+            <ul class="mobHidden">
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+
+                <li><a href="shelter.htm"><i class="fas fa-heart"></i> Shelter</a></li>
+
+                <li><a href="species.htm"><i class="fas fa-search"></i> Species guide</a></li>
+
+                <li><a href="getIn.htm"><i class="fas fa-hands-helping"></i> Get involved</a></li>
+            </ul>
+
+            <div id="navDropDown">
+                <a href="shelter.htm"><i class="fas fa-heart"></i> Shelter</a>
+
+                <a href="species.htm"><i class="fas fa-search"></i> Species guide</a>
+
+                <a href="getIn.htm"><i class="fas fa-hands-helping"></i> Get involved</a>
+
+                <a href="news.htm"><i class="fas fa-newspaper"></i> News</a>
+
+
+
+                <a href="../cref.html"><i class="fas fa-bookmark"></i> Cross reference page</a>
+            </div>
+
+            <a id="barsBlock" onclick="dropDownMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Intro section -->
+    <section class="descIntro mobHidden" style="background-image: url(../img/donateIntro.jpg);">
+        <h2>Become one of us!<br id="brSeparator" />Make a real <u>change</u></h2>
+    </section>
+
+    <!-- Content -->
+    <div class="elContent">
+        <h3>Donation application form</h3>
+
+        <form id="donateForm" action="" method="post" onsubmit="window.location.href = 'confirm.htm'; return false;" name="donateForm">
+            <fieldset id="fsGeneral">
+                <legend>General info</legend>
+                <label for="amount">Indicate your donation amount:<sup>*</sup></label>
+
+                <span id="prevSpan" class="mobHidden">1$</span>
+                <input type="range" min="1" max="1000" value="10" class="sliderIn" id="sliderRange">
+                <span class="mobHidden">1000$</span>
+
+                <input id="sliderText" type="text" readonly="readonly">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact information</legend>
+                <div class="formQuestion">
+                    <label for="name">First name:<sup>*</sup></label>
+                    <div class="iconBlock">
+                        <i class="fas fa-user"></i>
+                        <input required="required" placeholder="your name" type="text" name="firstName" id="name" />
+                    </div>
+
+                    <label for="surname">Last name:<sup>*</sup></label>
+                    <div class="iconBlock">
+                        <i class="fas fa-user"></i>
+                        <input required="required" placeholder="your surname" type="text" name="lastName" id="surname" />
+                    </div>
+                </div>
+
+                <div class="formQuestion">
+                    <label id="lShip">Shipping address:<sup>*</sup></label>
+                    <div class="iconBlock">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input required="required" placeholder="city" type="text" name="shCity" id="city" />
+                    </div>
+
+                    <div class="iconBlock">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input required="required" placeholder="province/state" type="text" name="shState" id="state" />
+                    </div>
+
+                    <div class="iconBlock">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input pattern="^\d{5}|\d{5}-\d{4}|[A-Z]\d[A-Z] \d[A-Z]\d|[a-z]\d[a-z] \d[a-z]\d|[A-Z]\d[A-Z]\d[A-Z]\d|[A-Z]\d[a-z]\d[a-z]\d$" required="required" placeholder="postal/zip code" type="text" name="shCode" id="code" />
+                    </div>
+
+                    <div class="iconBlock">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input required="required" placeholder="street address" type="text" name="shStreet" id="street" />
+                    </div>
+                </div>
+
+                <div class="formQuestion">
+                    <label for="phone">Phone number:<sup>*</sup></label>
+                    <div class="iconBlock">
+                        <i class="fas fa-phone"></i>
+                        <input required="required" placeholder="___ ____-___" type="text" name="phoneNumber" id="phone" maxlength="12" pattern="^\d{3} \d{4}-\d{3}$" />
+                    </div>
+
+                    <label for="email">Email:<sup>*</sup></label>
+                    <div class="iconBlock">
+                        <i class="fas fa-envelope"></i>
+                        <input required="required" placeholder="your e-mail address" type="email" name="emailAddress" id="email" />
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Payment options</legend>
+                <div class="formQuestion">
+                    <label for="number">Card number:<sup>*</sup></label>
+
+                    <div class="iconBlock">
+                        <i class="fas fa-dollar-sign"></i>
+                        <input pattern="^\d{4} \d{4} \d{4} \d{4}$" required="required" placeholder="0000 0000 0000 0000" type="text" name="cardNumber" maxlength="19" id="number" />
+                    </div>
+
+                    <div class="iconBlock">
+                        <i class="fas fa-dollar-sign"></i>
+                        <input required="required" placeholder="Month" type="number" name="cardMonth" maxlength="2" min="1" max="12" id="month" />
+                    </div>
+
+                    <div class="iconBlock">
+                        <i class="fas fa-dollar-sign"></i>
+                        <input required="required" placeholder="Year" type="number" min="1900" max="2200" name="cardYear" maxlength="4" id="year" />
+                    </div>
+
+                    <div class="tooltip mobHidden"><i class="fas fa-info-circle"></i>
+                        <span class="tooltipContent"> CVV Number (Card Verification Value) is a 3-digit number. It is located on the back of your credit or debit card.</span>
+                    </div>
+
+                    <div class="iconBlock">
+                        <i class="fas fa-dollar-sign"></i>
+                        <input required="required" pattern="^\d{3}$" placeholder="CVV" type="password" name="cardCVV" maxlength="3" id="cvv" />
+                    </div>
+                </div>
+            </fieldset>
+
+            <center>
+                <button name="donateSubmit" type="submit" class="printHidden">Submit</button>
+            </center>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer id="mainFooter" class="printHidden">
+        <ul class="mobHidden">
+            <li><a href="news.htm">News</a></li>
+
+            <li><a href="../cref.html">Cross Reference Page</a></li>
+        </ul>
+
+        <center>
+            <q class="mobHidden">Protect the ocean - Protect your future.</q><br />
+            <span id="yearFooter">MLCC</span>
+        </center>
+
+        <p class="credits"><span id="lastModified"></span>Website by Olena Kostrova</p>
+        <script src="../js/getYear.js"></script>
+    </footer>
+</body>
+
+</html>

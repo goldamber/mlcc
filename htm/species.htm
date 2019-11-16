@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    The Final Project (Marine Life Care Centre).
+
+    species.htm
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    Species guide for visitors of the website.
+    Displays general information about the marine creatures which are researched by MLCC.
+    -->
+
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <meta name="author" content="Olena Kostrova" />
+    <meta name="classification" content="Marine life" />
+    <meta name="description" content="Website for nonprofit organisation which provides consevation value for for marine animals and focuses on marine research" />
+    <meta name="generator" content="Brackets" />
+    <meta name="rating" content="general" />
+    <meta name="keywords" content="marine wildlife, marine mammals, research, conservation, cetaceans, pinnipeds, rescue" />
+
+    <title>MLCC</title>
+
+    <!-- General stylesheets -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/fontawesome/all.css">
+    <link rel="stylesheet" href="../css/speciesStyles.css">
+    <!-- Desktop styles -->
+    <link href="../css/style.css" rel="stylesheet" media="screen and (min-width: 772px)">
+    <!-- Mobile styles -->
+    <link rel="stylesheet" href="../css/mobile.css" media="only screen and (max-width: 772px)">
+    <link rel="stylesheet" href="../css/mobileHomeStyles.css" media="only screen and (max-width: 772px)">
+    <!-- Print -->
+    <link rel="stylesheet" href="../css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Scripts -->
+    <script src="../js/dropDown.js"></script>
+    <script src="../js/slider.js"></script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <header id="navList" class="printHidden">
+        <nav>
+            <a href="../index.html" style="padding: 5px;">
+                <img src="../img/Logo.png" alt="MLCC logo.">
+            </a>
+
+            <ul class="mobHidden">
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+
+                <li><a href="shelter.htm"><i class="fas fa-heart"></i> Shelter</a></li>
+
+                <li><a href="species.htm" class="navCurrent"><i class="fas fa-search"></i> Species guide</a></li>
+
+                <li><a href="getIn.htm"><i class="fas fa-hands-helping"></i> Get involved</a></li>
+            </ul>
+
+            <div id="navDropDown">
+                <a href="shelter.htm"><i class="fas fa-heart"></i> Shelter</a>
+
+                <a href="species.htm"><i class="fas fa-search"></i> Species guide</a>
+
+                <a href="getIn.htm"><i class="fas fa-hands-helping"></i> Get involved</a>
+
+                <a href="news.htm"><i class="fas fa-newspaper"></i> News</a>
+
+                <a href="../cref.html"><i class="fas fa-bookmark"></i> Cross reference page</a>
+            </div>
+
+            <a id="barsBlock" onclick="dropDownMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Intro section -->
+    <section id="secSpecies" class="descIntro mobHidden" style="background-image: url(../img/guideIntro.jpg);">
+        <h2>Explore this amazing diversity</h2>
+    </section>
+
+    <!-- Content -->
+    <div class="elContent">
+        <article class="tableBlock printHidden mobHidden">
+            <h3>Quick guide</h3>
+
+            <table id="animalTable">
+                <thead id="tthBold">
+                    <tr>
+                        <th>Name</th>
+                        <th>Scientific name</th>
+                        <th>Family</th>
+                        <th>Conservation status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Killer whale</td>
+                        <td id="tdItalic">Orcinus orca</td>
+                        <td rowspan="6">Delphinidae</td>
+                        <td>Critically endangered</td>
+                    </tr>
+                    <tr>
+                        <td>Bottlenose dolphin</td>
+                        <td>Tursiops truncatus</td>
+                        <td>Vulnerable </td>
+                    </tr>
+                    <tr>
+                        <td>False killer whale</td>
+                        <td>Pseudorca crassidens</td>
+                        <td>Near threatened</td>
+                    </tr>
+                    <tr>
+                        <td id="tdDolphin">Common dolphin</td>
+                        <td>Delphinus delphis</td>
+                        <td rowspan="5">Least concern</td>
+                    </tr>
+                    <tr>
+                        <td>Pilot whale</td>
+                        <td>Globicephala macrorhynchus</td>
+                    </tr>
+                    <tr>
+                        <td>Pacific white-sided dolphin</td>
+                        <td>Lagenorhynchus obliquidens</td>
+                    </tr>
+                    <tr>
+                        <td>Harbor porpoise</td>
+                        <td>Phocoena phocoena</td>
+                        <td>Phocoenidae</td>
+                    </tr>
+                    <tr>
+                        <td>Humpback whale</td>
+                        <td>Megaptera novaeangliae</td>
+                        <td>Balaenopteridae</td>
+                    </tr>
+                    <tr>
+                        <td>Grey whale</td>
+                        <td>Eschrichtius robustus</td>
+                        <td>Eschrichtiidae</td>
+                        <td rowspan="3">Endangered</td>
+                    </tr>
+                    <tr>
+                        <td>Green sea turtle</td>
+                        <td>Chelonia mydas</td>
+                        <td>Cheloniidae</td>
+                    </tr>
+                    <tr>
+                        <td>Sea otter</td>
+                        <td>Enhydra lutris</td>
+                        <td>Mustelidae</td>
+                    </tr>
+                    <tr>
+                        <td>Sperm whale</td>
+                        <td>Physeter macrocephalus</td>
+                        <td>Physeteridae</td>
+                        <td>Vulnerable</td>
+                    </tr>
+                    <tr>
+                        <td>Harbor seal</td>
+                        <td>Phoca vitulina</td>
+                        <td>Phocidae</td>
+                        <td rowspan="2">Least concern</td>
+                    </tr>
+                    <tr>
+                        <td>California sea lion</td>
+                        <td>Zalophus californian</td>
+                        <td rowspan="2">Otariidae</td>
+                    </tr>
+                    <tr>
+                        <td>Fur seal</td>
+                        <td>Callorhinus ursinus</td>
+                        <td>Vulnerable</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <div class="animalBlock">
+            <div class="animalList">
+                <h4 id="hDolphins">Dolphins</h4>
+                <ul>
+                    <li>
+                        <div class="animalGroup printSection">
+                            <img src="../img/guide/pacificWhiteSidedDolphinM.jpg" alt="Pacific dophin" />
+                            <p>Pacific white-sided dolphin</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Scientific name:&nbsp;&nbsp;&nbsp;&nbsp;</span>Lagenorhynchus obliquidens</p>
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>Mammalia</p>
+                                    <p><span>Order:&nbsp;&nbsp;&nbsp;&nbsp;</span>Artiodactyla</p>
+                                    <p><span>Family:&nbsp;&nbsp;&nbsp;&nbsp;</span>Delphinidae</p>
+                                    <p><span>Conservation status:&nbsp;&nbsp;&nbsp;&nbsp;</span>Least Concern</p>
+                                    <p>
+
+
+                                        <div class="slideBlock printHidden">
+                                            <div class="slide">
+                                                <img src="../img/guide/pacificWhiteSidedDolphin1.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <img src="../img/guide/pacificWhiteSidedDolphin2.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                            <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="animalGroup printSection">
+                            <img id="imgPilot" src="../img/guide/pilotWhaleM.jpg" alt="Pilot whale" />
+                            <p>Pilot whale</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Scientific name:&nbsp;&nbsp;&nbsp;&nbsp;</span>Globicephala macrorhynchus</p>
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>Mammalia</p>
+                                    <p><span>Order:&nbsp;&nbsp;&nbsp;&nbsp;</span>Artiodactyla</p>
+                                    <p><span>Family:&nbsp;&nbsp;&nbsp;&nbsp;</span>Delphinidae</p>
+                                    <p><span>Conservation status:&nbsp;&nbsp;&nbsp;&nbsp;</span>Least Concern</p>
+                                    <p>
+
+
+                                        <div class="slideBlock printHidden">
+                                            <div class="slide">
+                                                <img src="../img/guide/pilotWhale1.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <img src="../img/guide/pilotWhale2.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                            <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="animalGroup printSection">
+                            <img src="../img/guide/commonDolphinM.jpg" alt="Common dolphin" />
+                            <p>Common dolphin</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Scientific name:&nbsp;&nbsp;&nbsp;&nbsp;</span>Delphinus delphis</p>
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>Mammalia</p>
+                                    <p><span>Order:&nbsp;&nbsp;&nbsp;&nbsp;</span>Artiodactyla</p>
+                                    <p><span>Family:&nbsp;&nbsp;&nbsp;&nbsp;</span>Delphinidae</p>
+                                    <p><span>Conservation status:&nbsp;&nbsp;&nbsp;&nbsp;</span>Least Concern</p>
+                                    <p>
+
+
+                                        <div class="slideBlock printHidden">
+                                            <div class="slide">
+                                                <img src="../img/guide/commonDolphin1.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <img src="../img/guide/commonDolphin2.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                            <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li id="falseKiller">
+                        <div class="animalGroup printSection">
+                            <img src="../img/guide/falseKillerWhaleM.jpg" alt="False killer whale" />
+                            <p>False killer whale</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Scientific name:&nbsp;&nbsp;&nbsp;&nbsp;</span>Pseudorca crassidens</p>
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>Mammalia</p>
+                                    <p><span>Order:&nbsp;&nbsp;&nbsp;&nbsp;</span>Artiodactyla</p>
+                                    <p><span>Family:&nbsp;&nbsp;&nbsp;&nbsp;</span>Delphinidae</p>
+                                    <p><span>Conservation status:&nbsp;&nbsp;&nbsp;&nbsp;</span>Near threatened</p>
+                                    <p>
+                                        <div class="slideBlock printHidden">
+                                            <div class="slide">
+                                                <img src="../img/guide/falseKillerWhale1.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <img src="../img/guide/falseKillerWhale2.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                            <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li id="liDolphin">
+                        <div class="animalGroup printSection">
+                            <img src="../img/guide/bottlenoseDolphinM.jpg" alt="Bottlenose dolphin" />
+                            <p>Bottlenose dolphin</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Scientific name:&nbsp;&nbsp;&nbsp;&nbsp;</span>Pseudorca crassidens</p>
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>Mammalia</p>
+                                    <p><span>Order:&nbsp;&nbsp;&nbsp;&nbsp;</span>Artiodactyla</p>
+                                    <p><span>Family:&nbsp;&nbsp;&nbsp;&nbsp;</span>Delphinidae</p>
+                                    <p><span>Conservation status:&nbsp;&nbsp;&nbsp;&nbsp;</span>Vulnerable</p>
+                                    <p>
+                                        <div class="slideBlock printHidden">
+                                            <div class="slide">
+                                                <img src="../img/guide/bottlenoseDolphin1.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <img src="../img/guide/bottlenoseDolphin2.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                            <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                </div>
+
+                                <div class="audioSample printHidden">
+                                    <span>Listent:</span>
+                                    <audio src="../audio/dolphin.mp3" controls autoplay="false"></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li id="liOrca">
+                        <div class="animalGroup printSection">
+                            <img src="../img/guide/orcaM.jpg" alt="Killer whale" />
+                            <p>Killer whale</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Scientific name:&nbsp;&nbsp;&nbsp;&nbsp;</span>Orcinus orca</p>
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>Mammalia</p>
+                                    <p><span>Order:&nbsp;&nbsp;&nbsp;&nbsp;</span>Artiodactyla</p>
+                                    <p><span>Family:&nbsp;&nbsp;&nbsp;&nbsp;</span>Delphinidae</p>
+                                    <p><span>Conservation status:&nbsp;&nbsp;&nbsp;&nbsp;</span>Critically endangered</p>
+                                    <p>
+                                        <div class="slideBlock printHidden">
+                                            <div class="slide">
+                                                <img src="../img/guide/orca1.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <img src="../img/guide/orca2.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                            <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                </div>
+
+                                <div class="audioSample printHidden">
+                                    <span>Listent:</span>
+                                    <audio id="orcaSound" src="../audio/orca.mp3" controls autoplay="false"></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4 id="hWhales">Whales</h4>
+                <ul>
+                    <li id="liWhale">
+                        <div class="animalGroup printSection">
+                            <img src="../img/guide/humpbackWhaleM.jpg" alt="Humpback whale" />
+                            <p>Humpback whale</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Scientific name:&nbsp;&nbsp;&nbsp;&nbsp;</span>Megaptera novaeangliae</p>
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>Mammalia</p>
+                                    <p><span>Order:&nbsp;&nbsp;&nbsp;&nbsp;</span>Artiodactyla</p>
+                                    <p><span>Family:&nbsp;&nbsp;&nbsp;&nbsp;</span>Balaenopteridae</p>
+                                    <p><span>Conservation status:&nbsp;&nbsp;&nbsp;&nbsp;</span>Least concern</p>
+                                    <p>
+                                        <div id="slWhale" class="slideBlock printHidden">
+                                            <div class="slide">
+                                                <img src="../img/guide/humpbackWhale1.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <img src="../img/guide/humpbackWhale2.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                            <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                </div>
+
+                                <div class="audioSample printHidden">
+                                    <span>Listent:</span>
+                                    <audio src="../audio/humpbackWhale.mp3" controls autoplay="false"></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="animalGroup printSection">
+                            <img src="../img/guide/greyWhaleM.jpg" alt="Gray whale" />
+                            <p>Gray whale</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Scientific name:&nbsp;&nbsp;&nbsp;&nbsp;</span>Eschrichtius robustus</p>
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>Mammalia</p>
+                                    <p><span>Order:&nbsp;&nbsp;&nbsp;&nbsp;</span>Artiodactyla</p>
+                                    <p><span>Family:&nbsp;&nbsp;&nbsp;&nbsp;</span>Eschrichtiidae</p>
+                                    <p><span>Conservation status:&nbsp;&nbsp;&nbsp;&nbsp;</span>Least Concern</p>
+                                    <p>
+
+
+                                        <div class="slideBlock printHidden">
+                                            <div class="slide">
+                                                <img src="../img/guide/greyWhale1.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <img src="../img/guide/greyWhale2.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                            <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="animalGroup printSection">
+                            <img src="../img/guide/spermWhaleM.jpg" alt="Sperm whale" />
+                            <p>Sperm whale</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Scientific name:&nbsp;&nbsp;&nbsp;&nbsp;</span>Physeter macrocephalus</p>
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>Mammalia</p>
+                                    <p><span>Order:&nbsp;&nbsp;&nbsp;&nbsp;</span>Artiodactyla</p>
+                                    <p><span>Family:&nbsp;&nbsp;&nbsp;&nbsp;</span>Physeteridae</p>
+                                    <p><span>Conservation status:&nbsp;&nbsp;&nbsp;&nbsp;</span>Vulnerable</p>
+                                    <p>
+                                        <div class="slideBlock printHidden">
+                                            <div class="slide">
+                                                <img src="../img/guide/spermWhale1.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <img src="../img/guide/spermWhale2.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                            <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4>Porpoises</h4>
+                <ul>
+                    <li id="liPorpoise">
+                        <div class="animalGroup printSection">
+                            <img src="../img/guide/harborPorpoiseM.jpg" alt="Harbour porpoise" />
+                            <p>Harbour porpoise</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Scientific name:&nbsp;&nbsp;&nbsp;&nbsp;</span>Phocoena phocoena</p>
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>Mammalia</p>
+                                    <p><span>Order:&nbsp;&nbsp;&nbsp;&nbsp;</span>Artiodactyla</p>
+                                    <p><span>Family:&nbsp;&nbsp;&nbsp;&nbsp;</span> Phocoenidae</p>
+                                    <p><span>Conservation status:&nbsp;&nbsp;&nbsp;&nbsp;</span>Least concern</p>
+                                    <p>
+                                        <div class="slideBlock printHidden">
+                                            <div class="slide">
+                                                <img src="../img/guide/harborPorpoise1.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <img src="../img/guide/harborPorpoise2.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                            <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4>Seals</h4>
+                <ul>
+                    <li>
+                        <div class="animalGroup printSection">
+                            <img id="imgSeal" src="../img/guide/furSealM.jpg" alt="Fur seal" />
+                            <p>Fur seal</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Scientific name:&nbsp;&nbsp;&nbsp;&nbsp;</span>Callorhinus ursinus</p>
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>Mammalia</p>
+                                    <p><span>Order:&nbsp;&nbsp;&nbsp;&nbsp;</span> Carnivora</p>
+                                    <p><span>Family:&nbsp;&nbsp;&nbsp;&nbsp;</span> Otariidae</p>
+                                    <p><span>Conservation status:&nbsp;&nbsp;&nbsp;&nbsp;</span>Vulnerable</p>
+                                    <p>
+                                        <div class="slideBlock printHidden">
+                                            <div class="slide">
+                                                <img src="../img/guide/furSeal1.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <img src="../img/guide/furSeal2.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                            <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="animalGroup printSection">
+                            <img src="../img/guide/harborSealM.jpg" alt="Harbor seal" />
+                            <p>Harbor seal</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Scientific name:&nbsp;&nbsp;&nbsp;&nbsp;</span>Phoca vitulina</p>
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>Mammalia</p>
+                                    <p><span>Order:&nbsp;&nbsp;&nbsp;&nbsp;</span> Carnivora</p>
+                                    <p><span>Family:&nbsp;&nbsp;&nbsp;&nbsp;</span>Phocidae</p>
+                                    <p><span>Conservation status:&nbsp;&nbsp;&nbsp;&nbsp;</span>Least concern</p>
+                                    <p>
+                                        <div class="slideBlock printHidden">
+                                            <div class="slide">
+                                                <img src="../img/guide/harborSeal1.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <img src="../img/guide/harborSeal2.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                            <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li id="liSeaLion">
+                        <div class="animalGroup printSection">
+                            <img src="../img/guide/seaLionM.jpg" alt="California sea lion" />
+                            <p>California sea lion</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Scientific name:&nbsp;&nbsp;&nbsp;&nbsp;</span>Zalophus californianus</p>
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>Mammalia</p>
+                                    <p><span>Order:&nbsp;&nbsp;&nbsp;&nbsp;</span>Carnivora</p>
+                                    <p><span>Family:&nbsp;&nbsp;&nbsp;&nbsp;</span>Otariidae</p>
+                                    <p><span>Conservation status:&nbsp;&nbsp;&nbsp;&nbsp;</span>Least concern</p>
+                                    <p>
+                                        <div class="slideBlock printHidden">
+                                            <div class="slide">
+                                                <img src="../img/guide/seaLion1.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <img src="../img/guide/seaLion2.jpg" />
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                            <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4 id="hTurtle">Turtles</h4>
+                <ul>
+                    <li id="liTurtle">
+                        <div class="animalGroup printSection">
+                            <img src="../img/guide/seaTurtleM.jpg" alt="Green sea turtle" />
+                            <p>Green sea turtle</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Scientific name:&nbsp;&nbsp;&nbsp;&nbsp;</span>Chelonia mydas</p>
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>Reptilia</p>
+                                    <p><span>Order:&nbsp;&nbsp;&nbsp;&nbsp;</span>Testudines</p>
+                                    <p><span>Family:&nbsp;&nbsp;&nbsp;&nbsp;</span>Cheloniidae</p>
+                                    <p><span>Conservation status:&nbsp;&nbsp;&nbsp;&nbsp;</span>Endangered</p>
+                                    <p>
+                                        <div class="slideBlock printHidden">
+                                            <div class="slide">
+                                                <img src="../img/guide/seaTurtle1.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <img src="../img/guide/seaTurtle2.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                            <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4>Sea otters</h4>
+                <ul>
+                    <li id="liSeaOtter">
+                        <div class="animalGroup printSection">
+                            <img src="../img/guide/seaOtterM.jpg" alt="Sea otter" />
+                            <p>Sea otter</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores tenetur culpa a, aliquid totam iusto quod, atque ipsum quas iste ullam laborum voluptate harum asperiores, praesentium, cumque dolorem neque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ipsam quidem! Obcaecati tempora tempore perspiciatis aspernatur. Aliquid numquam minus, voluptatem error distinctio at nesciunt ipsum, culpa est optio dignissimos earum.</p>
+
+                            <span class="printHidden" onclick="readMoreMenu(this); return false;">Read more <i class="fas fa-chevron-down"></i></span>
+
+                            <div class="animalDetails">
+                                <div class="generalInfo printSection">
+                                    <p><span>Scientific name:&nbsp;&nbsp;&nbsp;&nbsp;</span>Enhydra lutris</p>
+                                    <p><span>Class:&nbsp;&nbsp;&nbsp;&nbsp;</span>Mammalia</p>
+                                    <p><span>Order:&nbsp;&nbsp;&nbsp;&nbsp;</span>Carnivora</p>
+                                    <p><span>Family:&nbsp;&nbsp;&nbsp;&nbsp;</span>Mustelidae</p>
+                                    <p><span>Conservation status:&nbsp;&nbsp;&nbsp;&nbsp;</span>Endangered</p>
+                                    <p>
+                                        <div class="slideBlock printHidden">
+                                            <div class="slide">
+                                                <img src="../img/guide/seaOtter1.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <img src="../img/guide/seaOtter2.jpg">
+                                                <div class="arrowsBlock">
+                                                </div>
+                                            </div>
+
+                                            <a class="prev" onclick="prevSlide(this); return false;"><i class="fas fa-angle-double-left"></i></a>
+                                            <a class="next" onclick="nextSlide(this); return false;"><i class="fas fa-angle-double-right"></i></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="mainFooter" class="printHidden">
+        <ul class="mobHidden">
+            <li><a href="news.htm">News</a></li>
+
+            <li><a href="../cref.html">Cross Reference Page</a></li>
+        </ul>
+
+        <center>
+            <q class="mobHidden">Protect the ocean - Protect your future.</q><br />
+            <span id="yearFooter">MLCC</span>
+        </center>
+
+        <p class="credits"><span id="lastModified"></span>Website by Olena Kostrova</p>
+        <script src="../js/getYear.js"></script>
+    </footer>
+</body>
+
+</html>

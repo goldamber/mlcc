@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    Marine Life Care Centre.
+
+    index.html
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    Home page of the website.
+    Displays general information about the company.
+    -->
+
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <meta name="author" content="Olena Kostrova" />
+    <meta name="classification" content="Marine life" />
+    <meta name="description" content="Website for nonprofit organisation which provides consevation value for for marine animals and focuses on marine research" />
+    <meta name="generator" content="Brackets" />
+    <meta name="rating" content="general" />
+    <meta name="keywords" content="marine wildlife, marine mammals, research, conservation, cetaceans, pinnipeds, rescue" />
+
+    <title>MLCC</title>
+
+    <!-- General stylesheets -->
+    <link rel="stylesheet" rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" rel="stylesheet" href="css/fontawesome/all.css">
+    <!-- Desktop styles -->
+    <link rel="stylesheet" href="css/style.css" rel="stylesheet" media="screen and (min-width: 772px)">
+    <link rel="stylesheet" href="css/homeStyles.css" rel="stylesheet" media="screen and (min-width: 772px)">
+    <!-- Mobile styles -->
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 772px)">
+    <link rel="stylesheet" href="css/mobileHomeStyles.css" media="only screen and (max-width: 772px)">
+    <!-- Print -->
+    <link rel="stylesheet" href="css/printHomeStyles.css" media="print">
+    <link rel="stylesheet" href="css/print.css" media="print">
+
+    <!-- Scripts -->
+    <script src="js/dropDown.js"></script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+</head>
+
+
+<body>
+    <!-- Navigation bar -->
+    <header id="navList" class="printHidden">
+        <nav id="navLinks">
+            <a id="aLogo" href="#" style="padding: 5px;">
+                <img src="img/Logo.png" alt="MLCC logo.">
+            </a>
+
+            <ul class="mobHidden">
+                <li><a href="#" class="navCurrent"><i class="fas fa-home"></i> Home</a></li>
+
+                <li><a href="htm/shelter.htm"><i class="fas fa-heart"></i> Shelter</a></li>
+
+                <li><a href="htm/species.htm"><i class="fas fa-search"></i> Species guide</a></li>
+
+                <li><a href="htm/getIn.htm"><i class="fas fa-hands-helping"></i> Get involved</a></li>
+            </ul>
+
+            <div id="navDropDown">
+                <a href="htm/shelter.htm"><i class="fas fa-heart"></i> Shelter</a>
+
+                <a href="htm/species.htm"><i class="fas fa-search"></i> Species guide</a>
+
+                <a href="htm/getIn.htm"><i class="fas fa-hands-helping"></i> Get involved</a>
+
+                <a href="htm/news.htm"><i class="fas fa-newspaper"></i> News</a>
+
+                <a href="htm/faq.htm"><i class="fas fa-question"></i> FAQ</a>
+
+                <a href="cref.html"><i class="fas fa-bookmark"></i> Cross reference page</a>
+            </div>
+
+            <a id="barsBlock" onclick="dropDownMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Intro section -->
+    <section id="secHome" class="descIntro mobHidden" style="background-image: url(img/home0.jpg);">
+        <h1 id="hTitle" style="letter-spacing: 0.1em;">Marine Life Care Centre</h1>
+    </section>
+
+    <!-- Content -->
+    <div class="elContent">
+        <article>
+            <div class="printSection">
+                <h3 id="hFont">About us</h3>
+                <pre id="preDescribtion" class="mobHidden printHidden">We are nonprofit organisation for rescuing marine creatures.
+            We were established 5 years ago as a small company.
+            Today we have grown into a big corparation because of people who share our goals.
+            We all share one ocean. Let's protect those beautiful and mysterious animals together!
+            <strong id="strongYou">YOU</strong> can make a change.
+            <strong>YOU</strong> can save lives!</pre>
+
+                <p class="dHidden">
+                    We are nonprofit organisation for rescuing marine creatures.<br />
+                    We were established 5 years ago as a small company.
+                    Today we have grown into a big corparation because of people who share our goals.<br />
+                    We all share one ocean. Let's protect those beautiful and mysterious animals together!<br />
+                    <strong>YOU</strong> can make a change.<br />
+                    <strong>YOU</strong> can save lives!
+                </p>
+            </div>
+
+            <div class="printSection">
+                <h3 id="hGoals">Our goals</h3>
+                <div class="cardContainer">
+                    <div id="divHelpCard" class="cardH">
+                        <center>
+                            <img src="img/homeCard0.jpg" alt="Shelter.">
+                            <p>Help marine animals</p>
+                            <a class="printHidden" href="htm/shelter.htm"><button>Learn more</button></a>
+                        </center>
+                    </div>
+
+                    <div id="divExplore" class="cardH">
+                        <center>
+                            <img src="img/homeCard1.jpg" alt="Research.">
+                            <p>Explore the ocean</p>
+                            <a class="printHidden" href="htm/species.htm"><button>Learn more</button></a>
+                        </center>
+                    </div>
+
+                    <div class="cardH">
+                        <center>
+                            <img src="img/homeCard2.jpg" alt="Research.">
+                            <p>Connect with other marine lovers</p>
+                            <a class="printHidden" href="htm/getIn.htm"><button>Learn more</button></a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <center class="chartContainer printSection">
+            <h3 class="articleHeading">Did you know...?</h3>
+            <p>We take care of the animals that belong to 5 major conservation statuses.<br />
+                Majority of our species belong to Least concern group. We study only one kind of auatic creatres which was marked as Critically endangered.<br />
+                <span class="mobHidden printHidden">Click on each area of the chart and you will see the animals that have this status.</span></p>
+
+            <img src="img/pyramidChart.png" class="mobHidden" alt="Chart." usemap="#chartmap">
+            <map id="mapConservation" name="chartmap">
+                <area shape="poly" coords="128,95,223,144,386,63,386,0,221,13,154,44" alt="Critically endangered" title="Critically endangered" href="htm/species.htm#liOrca">
+
+                <area shape="poly" coords="94,159,221,217,450,111,448,46,223,148,126,102" alt="Endangered" title="Endangered" href="htm/species.htm#liSeaOtter">
+
+                <area shape="poly" coords="65,219,221,295,513,158,512,98,223,225,92,165" alt="Vulnerable" title="Vulnerable" href="htm/species.htm#liDolphin">
+
+                <area shape="poly" coords="33,282,223,373,577,203,574,144,220,302,63,227" alt="Near threatened" title="Near threatened" href="htm/species.htm#falseKiller">
+
+                <area shape="poly" coords="-1,345,224,451,637,254,637,191,221,378,30,287" alt="Least concern" title="Least concern" href="htm/species.htm#liSeaLion">
+            </map>
+
+            <div class="actionCall">
+                <p>Without your help this beauty won't last forever!</p>
+
+                <a class="printHidden" href="htm/getIn.htm"><button>Take action</button></a>
+            </div>
+        </center>
+
+        <div class="articleContainer printSection">
+            <h3 class="articleHeading">Our partners</h3>
+            <dl id="dlCompanies">
+                <dt>Whale and Dolphin Conservation (WDC)</dt>
+                <dd>wildlife company that fights for the welfare of cetaceans<br />
+                    <a id="aModifiedLink" href="https://us.whales.org/">whales.org</a></dd>
+
+                <hr id="hrSeparator" class="mobHidden" align="left" width="20%" />
+
+                <dt>Oceana</dt>
+                <dd>conervation organisation that provides resources for saving world's oceans<br /><a href="https://oceana.org/">oceana.org</a></dd>
+
+                <hr class="mobHidden" align="left" width="20%" />
+
+                <dt>Dolphin Research Center</dt>
+                <dd>company which studies dolphins<br /><a href="https://dolphins.org/">dolphins.org</a></dd>
+            </dl>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="mainFooter" class="printHidden">
+        <ul class="mobHidden">
+            <li><a href="htm/news.htm">News</a></li>
+        </ul>
+
+        <center>
+            <q id="qPurpose" class="mobHidden">Protect the ocean - Protect your future.</q><br />
+            <span id="yearFooter">MLCC</span>
+        </center>
+
+        <p class="credits"><span id="lastModified"></span>Website by Olena Kostrova</p>
+        <script src="js/getYear.js"></script>
+    </footer>
+</body>
+
+</html>

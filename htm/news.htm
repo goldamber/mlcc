@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    The Final Project (Marine Life Care Centre).
+
+    news.htm
+    Author: Olena Kostrova (T00622879).
+    Date:   08/26/2019.
+
+    News feed of the website.
+    List of news and upcoming events.
+    -->
+
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <meta name="author" content="Olena Kostrova" />
+    <meta name="classification" content="Marine life" />
+    <meta name="description" content="Website for nonprofit organisation which provides consevation value for for marine animals and focuses on marine research" />
+    <meta name="generator" content="Brackets" />
+    <meta name="rating" content="general" />
+    <meta name="keywords" content="marine wildlife, marine mammals, research, conservation, cetaceans, pinnipeds, rescue" />
+
+    <title>MLCC</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- General stylesheets -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/fontawesome/all.css">
+    <link rel="stylesheet" href="../css/newsStyles.css">
+    <!-- Desktop styles -->
+    <link href="../css/style.css" rel="stylesheet" media="screen and (min-width: 772px)">
+    <!-- Mobile styles -->
+    <link rel="stylesheet" href="../css/mobile.css" media="only screen and (max-width: 772px)">
+    <link rel="stylesheet" href="../css/mobileHomeStyles.css" media="only screen and (max-width: 772px)">
+    <!-- Print -->
+    <link rel="stylesheet" href="../css/print.css" media="print">
+
+    <!-- Scripts -->
+    <script src="../js/dropDown.js"></script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <header id="navList" class="printHidden">
+        <nav>
+            <a href="../index.html" style="padding: 5px;">
+                <img src="../img/Logo.png" alt="MLCC logo.">
+            </a>
+
+            <ul class="mobHidden">
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+
+                <li><a href="shelter.htm"><i class="fas fa-heart"></i> Shelter</a></li>
+
+                <li><a href="species.htm"><i class="fas fa-search"></i> Species guide</a></li>
+
+                <li><a href="getIn.htm"><i class="fas fa-hands-helping"></i> Get involved</a></li>
+            </ul>
+
+            <div id="navDropDown">
+                <a href="shelter.htm"><i class="fas fa-heart"></i> Shelter</a>
+
+                <a href="species.htm"><i class="fas fa-search"></i> Species guide</a>
+
+                <a href="getIn.htm"><i class="fas fa-hands-helping"></i> Get involved</a>
+
+                <a href="news.htm"><i class="fas fa-newspaper"></i> News</a>
+
+
+
+                <a href="../cref.html"><i class="fas fa-bookmark"></i> Cross reference page</a>
+            </div>
+
+            <a id="barsBlock" onclick="dropDownMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Intro section -->
+    <section id="introSection" class="descIntro mobHidden" style="background-image: url(../img/newsIntro.jpg);">
+        <h2>News</h2>
+    </section>
+
+    <!-- Content -->
+    <div class="elContent">
+        <div id="divSection" class="newsDiv printSection">
+            <img src="../img/news/news0.jpg" alt="Angel" />
+            <p>Meet Angel</p>
+            <p id="pAngel">Today we welcome our new resident Angel<br />
+                She was raised in captivity. However, her owners didn't treat her properly since they didn't know what kind of environment she needed. Common bottlenose dolphins can travel hundreds of kilometers a day. Angel's pool was too small for her.<br />
+                Now she stays with us and seems to recover. We do our best to make her feel better. We are planning to start a release program for Angel which includes proper training.<br />
+                <a href="shelter.htm#liAngel">Read more</a> about Angel</p>
+
+            <p>08/23/2019</p>
+        </div>
+
+        <div class="newsDiv printSection">
+            <img id="imgOutline" src="../img/news/news2.jpg" alt="Luna" />
+            <p>Luna is now free</p>
+            <p id="pLuna">Today we celebrate the release of our favourite sea lion Luna<br />
+                She became one of our shelter animals when she was a young adult and had to stay with us for 5 month in order to recover. Thanks to your donations her recovery didn't take long. She became great friends with our stuff members. Everybody will niss her now.<br />
+                Glad to know that she has successfully joined the pack of wild sea lions which seemed to be her family. Enjoy your freedom Luna!<br />
+                <a href="shelter.htm#liLuna">Read more</a> about Luna</p>
+
+            <p>08/12/2019</p>
+        </div>
+
+        <div class="newsDiv printSection">
+            <img src="../img/news/news3.jpg" alt="Orca cub" />
+            <p>Found a newborn orca of southern resident pod</p>
+            <p id="pFirstLine">We welcome a new member of southern resident killer whale pod<br />
+                Research program is one of MLCC activities. Today our researchers discovered a newborn orca calf. This is unique because southern resident killer whales are the most endangered subspecies of orca. Because of this every single member is extremely important for survival of this kind.<br />
+                This is a great achievement for both scientists and killer whales!<br />
+                <a href="species.htm#liOrca">Read more</a> about killer whales</p>
+
+            <p>07/26/2019</p>
+        </div>
+
+        <div class="newsDiv printSection">
+            <img src="../img/news/news5.jpg" alt="Whalewatching" />
+            <p>Exiting whale watching trip</p>
+            <p id="pWhaleWatching">Join us for whale watching trip accross North America coastline<br />
+                Together with our volunteers we watched different kinds of whales, dolphins, and even seals. We build a great relationship with our team members, had lots of fun, and learnt more about marine wildlife.<br />
+                Don't miss our next trip! Stay tuned and we will post the next update soon.<br />
+                <a id="aVolunteer" href="getIn.htm#divVolunteer">Read more</a> about our volunteer positions</p>
+
+            <p>07/09/2019</p>
+        </div>
+
+        <div class="newsDiv printSection">
+            <img id="imgTurtles" src="../img/news/news6.jpg" alt="Turtles" />
+            <p>First steps of sea turtules</p>
+            <p>Today we helped newborn turtles to make their first steps<br />
+                It was so exiting to watch these cute little green sea turtles run towards their home in the ocean. Also, we made a great effort to keep them safe.<br />
+                Green sea turtle is one of endangered species, so it is important to ensure the survival of every single animal.<br />
+                <a href="species.htm#liTurtle">Read more</a> about sea turtles</p>
+
+            <p>06/25/2019</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="mainFooter" class="printHidden">
+        <ul class="mobHidden">
+            <li><a href="#">News</a></li>
+
+            <li><a href="../cref.html">Cross Reference Page</a></li>
+        </ul>
+
+        <center>
+            <q class="mobHidden">Protect the ocean - Protect your future.</q><br />
+            <span id="yearFooter">MLCC</span>
+        </center>
+
+        <p class="credits"><span id="lastModified"></span>Website by Olena Kostrova</p>
+        <script src="../js/getYear.js"></script>
+    </footer>
+</body>
+
+</html>
