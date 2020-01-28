@@ -1,7 +1,7 @@
 # MLCC:dolphin:
 Responsive website for non-profit organisation.
 
-## Describtion
+## Description
 This website helps to run Marine Life:whale2: oragisation by:
 * Providing marine awareness :fish:
 * Generating forms for donation/adoption
